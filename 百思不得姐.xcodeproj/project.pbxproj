@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		DA982AD01C7304E2003C6D52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982ACF1C7304E2003C6D52 /* main.m */; };
 		DA982AD31C7304E2003C6D52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982AD21C7304E2003C6D52 /* AppDelegate.m */; };
-		DA982AD61C7304E2003C6D52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982AD51C7304E2003C6D52 /* ViewController.m */; };
 		DA982AD91C7304E2003C6D52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA982AD71C7304E2003C6D52 /* Main.storyboard */; };
 		DA982ADB1C7304E2003C6D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA982ADA1C7304E2003C6D52 /* Assets.xcassets */; };
 		DA982ADE1C7304E2003C6D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA982ADC1C7304E2003C6D52 /* LaunchScreen.storyboard */; };
 		DA982AE91C7304E2003C6D52 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982AE81C7304E2003C6D52 /* _____Tests.m */; };
 		DA982AF41C7304E2003C6D52 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982AF31C7304E2003C6D52 /* _____UITests.m */; };
+		DA982B181C73097C003C6D52 /* WJEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B171C73097C003C6D52 /* WJEssenceController.m */; };
+		DA982B1B1C7309A6003C6D52 /* WJFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B1A1C7309A6003C6D52 /* WJFriendTrendsController.m */; };
+		DA982B1E1C7309EB003C6D52 /* WJMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B1D1C7309EB003C6D52 /* WJMeController.m */; };
+		DA982B211C730A0A003C6D52 /* WJNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B201C730A0A003C6D52 /* WJNewController.m */; };
+		DA982B241C730A69003C6D52 /* WJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B231C730A69003C6D52 /* WJTabBarController.m */; };
+		DA982B281C730B9B003C6D52 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B271C730B9B003C6D52 /* Foundation+Log.m */; };
+		DA982B2D1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B2A1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m */; };
+		DA982B2E1C730BE6003C6D52 /* UIView+WJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B2C1C730BE6003C6D52 /* UIView+WJExtension.m */; };
+		DA982B3A1C730DFD003C6D52 /* WJNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B391C730DFD003C6D52 /* WJNavgationController.m */; };
+		DA982B3D1C730EF5003C6D52 /* WJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B3C1C730EF5003C6D52 /* WJTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +48,6 @@
 		DA982ACF1C7304E2003C6D52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA982AD11C7304E2003C6D52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA982AD21C7304E2003C6D52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DA982AD41C7304E2003C6D52 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DA982AD51C7304E2003C6D52 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DA982AD81C7304E2003C6D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA982ADA1C7304E2003C6D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA982ADD1C7304E2003C6D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,26 @@
 		DA982AEF1C7304E2003C6D52 /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA982AF31C7304E2003C6D52 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		DA982AF51C7304E2003C6D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA982B161C73097C003C6D52 /* WJEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJEssenceController.h; sourceTree = "<group>"; };
+		DA982B171C73097C003C6D52 /* WJEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJEssenceController.m; sourceTree = "<group>"; };
+		DA982B191C7309A6003C6D52 /* WJFriendTrendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJFriendTrendsController.h; sourceTree = "<group>"; };
+		DA982B1A1C7309A6003C6D52 /* WJFriendTrendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJFriendTrendsController.m; sourceTree = "<group>"; };
+		DA982B1C1C7309EB003C6D52 /* WJMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJMeController.h; sourceTree = "<group>"; };
+		DA982B1D1C7309EB003C6D52 /* WJMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJMeController.m; sourceTree = "<group>"; };
+		DA982B1F1C730A0A003C6D52 /* WJNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJNewController.h; sourceTree = "<group>"; };
+		DA982B201C730A0A003C6D52 /* WJNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJNewController.m; sourceTree = "<group>"; };
+		DA982B221C730A69003C6D52 /* WJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WJTabBarController.h; path = "百思不得姐/classes/New-新帖/Controller/WJTabBarController.h"; sourceTree = SOURCE_ROOT; };
+		DA982B231C730A69003C6D52 /* WJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WJTabBarController.m; path = "百思不得姐/classes/New-新帖/Controller/WJTabBarController.m"; sourceTree = SOURCE_ROOT; };
+		DA982B251C730B47003C6D52 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DA982B271C730B9B003C6D52 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		DA982B291C730BE6003C6D52 /* UIBarButtonItem+WJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WJExtension.h"; sourceTree = "<group>"; };
+		DA982B2A1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WJExtension.m"; sourceTree = "<group>"; };
+		DA982B2B1C730BE6003C6D52 /* UIView+WJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WJExtension.h"; sourceTree = "<group>"; };
+		DA982B2C1C730BE6003C6D52 /* UIView+WJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WJExtension.m"; sourceTree = "<group>"; };
+		DA982B381C730DFD003C6D52 /* WJNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WJNavgationController.h; path = "百思不得姐/classes/New-新帖/Controller/WJNavgationController.h"; sourceTree = SOURCE_ROOT; };
+		DA982B391C730DFD003C6D52 /* WJNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WJNavgationController.m; path = "百思不得姐/classes/New-新帖/Controller/WJNavgationController.m"; sourceTree = SOURCE_ROOT; };
+		DA982B3B1C730EF5003C6D52 /* WJTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WJTabBar.h; path = "百思不得姐/classes/New-新帖/Controller/WJTabBar.h"; sourceTree = SOURCE_ROOT; };
+		DA982B3C1C730EF5003C6D52 /* WJTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WJTabBar.m; path = "百思不得姐/classes/New-新帖/Controller/WJTabBar.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +128,7 @@
 		DA982ACD1C7304E2003C6D52 /* 百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				DA982AD11C7304E2003C6D52 /* AppDelegate.h */,
-				DA982AD21C7304E2003C6D52 /* AppDelegate.m */,
-				DA982AD41C7304E2003C6D52 /* ViewController.h */,
-				DA982AD51C7304E2003C6D52 /* ViewController.m */,
-				DA982AD71C7304E2003C6D52 /* Main.storyboard */,
-				DA982ADA1C7304E2003C6D52 /* Assets.xcassets */,
-				DA982ADC1C7304E2003C6D52 /* LaunchScreen.storyboard */,
-				DA982ADF1C7304E2003C6D52 /* Info.plist */,
+				DA982B011C730881003C6D52 /* classes */,
 				DA982ACE1C7304E2003C6D52 /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -117,6 +137,12 @@
 		DA982ACE1C7304E2003C6D52 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA982AD11C7304E2003C6D52 /* AppDelegate.h */,
+				DA982AD21C7304E2003C6D52 /* AppDelegate.m */,
+				DA982AD71C7304E2003C6D52 /* Main.storyboard */,
+				DA982ADA1C7304E2003C6D52 /* Assets.xcassets */,
+				DA982ADC1C7304E2003C6D52 /* LaunchScreen.storyboard */,
+				DA982ADF1C7304E2003C6D52 /* Info.plist */,
 				DA982ACF1C7304E2003C6D52 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +164,204 @@
 				DA982AF51C7304E2003C6D52 /* Info.plist */,
 			);
 			path = "百思不得姐UITests";
+			sourceTree = "<group>";
+		};
+		DA982B011C730881003C6D52 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B021C730881003C6D52 /* Essence-精华 */,
+				DA982B061C730881003C6D52 /* FriendTrends-关注 */,
+				DA982B0A1C730881003C6D52 /* Me-我 */,
+				DA982B0E1C730881003C6D52 /* New-新帖 */,
+				DA982B121C730881003C6D52 /* Other-其他 */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		DA982B021C730881003C6D52 /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B031C730881003C6D52 /* Controller */,
+				DA982B041C730881003C6D52 /* Model */,
+				DA982B051C730881003C6D52 /* View */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		DA982B031C730881003C6D52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B161C73097C003C6D52 /* WJEssenceController.h */,
+				DA982B171C73097C003C6D52 /* WJEssenceController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA982B041C730881003C6D52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA982B051C730881003C6D52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA982B061C730881003C6D52 /* FriendTrends-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B071C730881003C6D52 /* Controller */,
+				DA982B081C730881003C6D52 /* Model */,
+				DA982B091C730881003C6D52 /* View */,
+			);
+			path = "FriendTrends-关注";
+			sourceTree = "<group>";
+		};
+		DA982B071C730881003C6D52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B191C7309A6003C6D52 /* WJFriendTrendsController.h */,
+				DA982B1A1C7309A6003C6D52 /* WJFriendTrendsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA982B081C730881003C6D52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA982B091C730881003C6D52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA982B0A1C730881003C6D52 /* Me-我 */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B0B1C730881003C6D52 /* Controller */,
+				DA982B0C1C730881003C6D52 /* Model */,
+				DA982B0D1C730881003C6D52 /* View */,
+			);
+			path = "Me-我";
+			sourceTree = "<group>";
+		};
+		DA982B0B1C730881003C6D52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B1C1C7309EB003C6D52 /* WJMeController.h */,
+				DA982B1D1C7309EB003C6D52 /* WJMeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA982B0C1C730881003C6D52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA982B0D1C730881003C6D52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA982B0E1C730881003C6D52 /* New-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B0F1C730881003C6D52 /* Controller */,
+				DA982B101C730881003C6D52 /* Model */,
+				DA982B111C730881003C6D52 /* View */,
+			);
+			path = "New-新帖";
+			sourceTree = "<group>";
+		};
+		DA982B0F1C730881003C6D52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B1F1C730A0A003C6D52 /* WJNewController.h */,
+				DA982B201C730A0A003C6D52 /* WJNewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA982B101C730881003C6D52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA982B111C730881003C6D52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA982B121C730881003C6D52 /* Other-其他 */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B261C730B57003C6D52 /* category */,
+				DA982B131C7308D8003C6D52 /* Controller */,
+				DA982B141C7308D8003C6D52 /* Model */,
+				DA982B151C7308D8003C6D52 /* View */,
+			);
+			path = "Other-其他";
+			sourceTree = "<group>";
+		};
+		DA982B131C7308D8003C6D52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B221C730A69003C6D52 /* WJTabBarController.h */,
+				DA982B231C730A69003C6D52 /* WJTabBarController.m */,
+				DA982B381C730DFD003C6D52 /* WJNavgationController.h */,
+				DA982B391C730DFD003C6D52 /* WJNavgationController.m */,
+			);
+			name = Controller;
+			path = "百思不得姐/classes/Essence-精华/Controller副本";
+			sourceTree = SOURCE_ROOT;
+		};
+		DA982B141C7308D8003C6D52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = "百思不得姐/classes/Essence-精华/Model副本";
+			sourceTree = SOURCE_ROOT;
+		};
+		DA982B151C7308D8003C6D52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B3B1C730EF5003C6D52 /* WJTabBar.h */,
+				DA982B3C1C730EF5003C6D52 /* WJTabBar.m */,
+			);
+			name = View;
+			path = "百思不得姐/classes/Essence-精华/View副本";
+			sourceTree = SOURCE_ROOT;
+		};
+		DA982B261C730B57003C6D52 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				DA982B291C730BE6003C6D52 /* UIBarButtonItem+WJExtension.h */,
+				DA982B2A1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m */,
+				DA982B2B1C730BE6003C6D52 /* UIView+WJExtension.h */,
+				DA982B2C1C730BE6003C6D52 /* UIView+WJExtension.m */,
+				DA982B271C730B9B003C6D52 /* Foundation+Log.m */,
+				DA982B251C730B47003C6D52 /* PrefixHeader.pch */,
+			);
+			name = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +494,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA982AD61C7304E2003C6D52 /* ViewController.m in Sources */,
 				DA982AD31C7304E2003C6D52 /* AppDelegate.m in Sources */,
+				DA982B2E1C730BE6003C6D52 /* UIView+WJExtension.m in Sources */,
 				DA982AD01C7304E2003C6D52 /* main.m in Sources */,
+				DA982B2D1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m in Sources */,
+				DA982B3A1C730DFD003C6D52 /* WJNavgationController.m in Sources */,
+				DA982B1B1C7309A6003C6D52 /* WJFriendTrendsController.m in Sources */,
+				DA982B211C730A0A003C6D52 /* WJNewController.m in Sources */,
+				DA982B241C730A69003C6D52 /* WJTabBarController.m in Sources */,
+				DA982B1E1C7309EB003C6D52 /* WJMeController.m in Sources */,
+				DA982B181C73097C003C6D52 /* WJEssenceController.m in Sources */,
+				DA982B3D1C730EF5003C6D52 /* WJTabBar.m in Sources */,
+				DA982B281C730B9B003C6D52 /* Foundation+Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/百思不得姐/classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.heartHope.-----";
@@ -424,6 +658,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/百思不得姐/classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.heartHope.-----";
@@ -498,6 +733,7 @@
 				DA982AFA1C7304E2003C6D52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA982AFB1C7304E2003C6D52 /* Build configuration list for PBXNativeTarget "百思不得姐Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +742,7 @@
 				DA982AFD1C7304E2003C6D52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA982AFE1C7304E2003C6D52 /* Build configuration list for PBXNativeTarget "百思不得姐UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +751,7 @@
 				DA982B001C7304E2003C6D52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
