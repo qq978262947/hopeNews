@@ -68,7 +68,7 @@
 		DA982B201C730A0A003C6D52 /* WJNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJNewController.m; sourceTree = "<group>"; };
 		DA982B221C730A69003C6D52 /* WJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WJTabBarController.h; path = "百思不得姐/classes/New-新帖/Controller/WJTabBarController.h"; sourceTree = SOURCE_ROOT; };
 		DA982B231C730A69003C6D52 /* WJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WJTabBarController.m; path = "百思不得姐/classes/New-新帖/Controller/WJTabBarController.m"; sourceTree = SOURCE_ROOT; };
-		DA982B251C730B47003C6D52 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DA982B251C730B47003C6D52 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "classes/Other-其他/PrefixHeader.pch"; sourceTree = "<group>"; };
 		DA982B271C730B9B003C6D52 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		DA982B291C730BE6003C6D52 /* UIBarButtonItem+WJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WJExtension.h"; sourceTree = "<group>"; };
 		DA982B2A1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WJExtension.m"; sourceTree = "<group>"; };
@@ -137,6 +137,7 @@
 		DA982ACE1C7304E2003C6D52 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA982B251C730B47003C6D52 /* PrefixHeader.pch */,
 				DA982AD11C7304E2003C6D52 /* AppDelegate.h */,
 				DA982AD21C7304E2003C6D52 /* AppDelegate.m */,
 				DA982AD71C7304E2003C6D52 /* Main.storyboard */,
@@ -359,7 +360,6 @@
 				DA982B2B1C730BE6003C6D52 /* UIView+WJExtension.h */,
 				DA982B2C1C730BE6003C6D52 /* UIView+WJExtension.m */,
 				DA982B271C730B9B003C6D52 /* Foundation+Log.m */,
-				DA982B251C730B47003C6D52 /* PrefixHeader.pch */,
 			);
 			name = category;
 			sourceTree = "<group>";

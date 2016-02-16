@@ -11,7 +11,4 @@
 @interface WJTabBar : UITabBar
 
 
-
-
-
 @end
