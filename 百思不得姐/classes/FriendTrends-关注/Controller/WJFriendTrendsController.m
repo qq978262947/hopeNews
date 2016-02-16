@@ -7,6 +7,7 @@
 //
 
 #import "WJFriendTrendsController.h"
+#import "WJRecommendController.h"
 
 @interface WJFriendTrendsController ()
 
@@ -16,8 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setupNavgationBar];
+}
+
+/**
+ *  设置导航栏
+ */
+- (void)setupNavgationBar{
     self.view.backgroundColor = WJGlobalBg;
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc]init];
+    leftBtn.image = [UIImage imageNamed:@"cellFollowClickIcon"];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"cellFollowClickIcon" highImage:@"cellFollowDisableIcon" target:self action:@selector(friendsClick)];
+}
+
+- (void)friendsClick
+{
+    WJRecommendController *vc = [[WJRecommendController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
