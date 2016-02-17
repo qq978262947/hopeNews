@@ -36,29 +36,32 @@
  *  初始化tableview
  */
 - (void)setupTableView{
-    self.backgroundColor = [UIColor whiteColor];
-    UITableView *tableView = [[UITableView alloc]initWithFrame:self.bounds];
+    WJLog(@"%f:::%f",self.width,WJScreenH);
+    self.backgroundColor = [UIColor yellowColor];
+    CGFloat tableViewH = WJScreenH - 64;
+    CGFloat tableViewW = self.width;
+    CGFloat tableViewX = 0;
+    CGFloat tableViewY = 0;
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(tableViewX, tableViewY, tableViewW, tableViewH)];
     [self addSubview:tableView];
     self.tableView = tableView;
     tableView.delegate = self;
     tableView.dataSource = self;
-    
-    
+    tableView.showsVerticalScrollIndicator = NO;
+    //设置背景颜色
+    UIView *bgView = [[UIView alloc]initWithFrame:tableView.bounds];
+    bgView.backgroundColor = WJRGBColor(244, 244, 244);;
+    [tableView setBackgroundView:bgView];
 }
 
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.categories.count;
+    return 20;//self.categories.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellId = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    if (nil == cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
-    }
-    self.categories[indexPath.row];
-    cell.textLabel.text = self.categories[indexPath.row];
+    WJLeftTableViewCell *cell = [WJLeftTableViewCell leftCellWithTableView:tableView];
+    cell.category = self.categories[indexPath.row];
     return cell;
 }
 
@@ -66,5 +69,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
 }
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 44;
+}
+
 
 @end

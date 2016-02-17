@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		44E53C87D90569C16218B006 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43CD0F108F2A540F2C3785 /* libPods.a */; };
+		DA4E165C1C745AB800CE8471 /* WJCategoryMode.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E165B1C745AB800CE8471 /* WJCategoryMode.m */; };
+		DA4E16621C745FE500CE8471 /* WJHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16611C745FE500CE8471 /* WJHttpTool.m */; };
+		DA4E16651C746D2800CE8471 /* WJRightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16641C746D2800CE8471 /* WJRightTableViewCell.m */; };
+		DA4E16671C746D7C00CE8471 /* WJRightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4E16661C746D7C00CE8471 /* WJRightTableViewCell.xib */; };
 		DA982AD01C7304E2003C6D52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982ACF1C7304E2003C6D52 /* main.m */; };
 		DA982AD31C7304E2003C6D52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982AD21C7304E2003C6D52 /* AppDelegate.m */; };
 		DA982AD91C7304E2003C6D52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA982AD71C7304E2003C6D52 /* Main.storyboard */; };
@@ -55,6 +59,13 @@
 		3D43CD0F108F2A540F2C3785 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3962BAC024308679A7ED0E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		90FBF1F81ED4B3C5F46B00A0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DA4E165A1C745AB800CE8471 /* WJCategoryMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCategoryMode.h; sourceTree = "<group>"; };
+		DA4E165B1C745AB800CE8471 /* WJCategoryMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCategoryMode.m; sourceTree = "<group>"; };
+		DA4E16601C745FE500CE8471 /* WJHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJHttpTool.h; sourceTree = "<group>"; };
+		DA4E16611C745FE500CE8471 /* WJHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJHttpTool.m; sourceTree = "<group>"; };
+		DA4E16631C746D2800CE8471 /* WJRightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJRightTableViewCell.h; sourceTree = "<group>"; };
+		DA4E16641C746D2800CE8471 /* WJRightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJRightTableViewCell.m; sourceTree = "<group>"; };
+		DA4E16661C746D7C00CE8471 /* WJRightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJRightTableViewCell.xib; sourceTree = "<group>"; };
 		DA982ACB1C7304E2003C6D52 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA982ACF1C7304E2003C6D52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA982AD11C7304E2003C6D52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -143,6 +154,31 @@
 				3D43CD0F108F2A540F2C3785 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA4E165D1C745E6200CE8471 /* params */ = {
+			isa = PBXGroup;
+			children = (
+				DA4E165A1C745AB800CE8471 /* WJCategoryMode.h */,
+				DA4E165B1C745AB800CE8471 /* WJCategoryMode.m */,
+			);
+			name = params;
+			sourceTree = "<group>";
+		};
+		DA4E165E1C745E6D00CE8471 /* results */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = results;
+			sourceTree = "<group>";
+		};
+		DA4E165F1C745FCB00CE8471 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				DA4E16601C745FE500CE8471 /* WJHttpTool.h */,
+				DA4E16611C745FE500CE8471 /* WJHttpTool.m */,
+			);
+			name = tool;
 			sourceTree = "<group>";
 		};
 		DA982AC21C7304E2003C6D52 = {
@@ -280,6 +316,8 @@
 		DA982B081C730881003C6D52 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA4E165E1C745E6D00CE8471 /* results */,
+				DA4E165D1C745E6200CE8471 /* params */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -362,6 +400,7 @@
 		DA982B121C730881003C6D52 /* Other-其他 */ = {
 			isa = PBXGroup;
 			children = (
+				DA4E165F1C745FCB00CE8471 /* tool */,
 				DA982B261C730B57003C6D52 /* category */,
 				DA982B131C7308D8003C6D52 /* Controller */,
 				DA982B141C7308D8003C6D52 /* Model */,
@@ -429,6 +468,9 @@
 			children = (
 				DA982B481C734681003C6D52 /* WJFriendTrendsRightView.h */,
 				DA982B491C734681003C6D52 /* WJFriendTrendsRightView.m */,
+				DA4E16631C746D2800CE8471 /* WJRightTableViewCell.h */,
+				DA4E16641C746D2800CE8471 /* WJRightTableViewCell.m */,
+				DA4E16661C746D7C00CE8471 /* WJRightTableViewCell.xib */,
 			);
 			name = right;
 			sourceTree = "<group>";
@@ -540,6 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA982ADE1C7304E2003C6D52 /* LaunchScreen.storyboard in Resources */,
+				DA4E16671C746D7C00CE8471 /* WJRightTableViewCell.xib in Resources */,
 				DA982B511C735356003C6D52 /* WJLeftTableViewCell.xib in Resources */,
 				DA982ADB1C7304E2003C6D52 /* Assets.xcassets in Resources */,
 				DA982B3F1C731E2D003C6D52 /* WJFriendTrendsController.xib in Resources */,
@@ -617,6 +660,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4E16621C745FE500CE8471 /* WJHttpTool.m in Sources */,
 				DA982AD31C7304E2003C6D52 /* AppDelegate.m in Sources */,
 				DA982B2E1C730BE6003C6D52 /* UIView+WJExtension.m in Sources */,
 				DA982B431C733876003C6D52 /* WJRecommendController.m in Sources */,
@@ -625,6 +669,8 @@
 				DA982B3A1C730DFD003C6D52 /* WJNavgationController.m in Sources */,
 				DA982B1B1C7309A6003C6D52 /* WJFriendTrendsController.m in Sources */,
 				DA982B211C730A0A003C6D52 /* WJNewController.m in Sources */,
+				DA4E165C1C745AB800CE8471 /* WJCategoryMode.m in Sources */,
+				DA4E16651C746D2800CE8471 /* WJRightTableViewCell.m in Sources */,
 				DA982B241C730A69003C6D52 /* WJTabBarController.m in Sources */,
 				DA982B1E1C7309EB003C6D52 /* WJMeController.m in Sources */,
 				DA982B471C73466B003C6D52 /* WJFriendTrendsLeftView.m in Sources */,

@@ -7,7 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+@class WJRecommendController;
 
 @interface WJLeftTableViewCell : UITableViewCell
+/**
+ *  cell的label控件
+/**
+ *  得到tableview
+ *
+ *  @param tableView cell所属的tableView
+ *
+ *  @return 指定tableview的cell
+ */
++ (WJLeftTableViewCell *)leftCellWithTableView:(UITableView *)tableView;
+
+
+/** 类别模型 */
+@property (nonatomic, strong) NSArray *category;
 
 @end

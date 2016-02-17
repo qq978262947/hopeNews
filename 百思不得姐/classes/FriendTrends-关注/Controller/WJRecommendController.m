@@ -17,12 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = WJGlobalBg;
+    
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationItem.title = @"推荐关注";
     
+    self.view.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
     [self loadMoreCategories];
-    
 }
 
 - (void)loadMoreCategories{

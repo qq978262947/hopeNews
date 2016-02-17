@@ -7,6 +7,7 @@
 //
 
 #import "WJFriendTrendsRightView.h"
+#import "WJRightTableViewCell.h"
 
 @interface WJFriendTrendsRightView () <UITableViewDelegate , UITableViewDataSource>
 
@@ -33,30 +34,40 @@
  *  初始化tableview
  */
 - (void)setupTableView{
-    self.backgroundColor = [UIColor whiteColor];
-    UITableView *tableView = [[UITableView alloc]initWithFrame:self.bounds];
+    //设置tableview
+    self.backgroundColor = WJGlobalBg;
+    CGFloat tableViewH = WJScreenH - 64;
+    CGFloat tableViewW = WJScreenW-71;
+    CGFloat tableViewX = 0;
+    CGFloat tableViewY = 0;
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(tableViewX, tableViewY, tableViewW, tableViewH)];
     [self addSubview:tableView];
     self.tableView = tableView;
     tableView.delegate = self;
     tableView.dataSource = self;
+    //设置tableview背景色
+    UIView *bgView = [[UIView alloc]initWithFrame:tableView.bounds];
+    bgView.backgroundColor = WJGlobalBg;
+    [tableView setBackgroundView:bgView];
+
+
 }
 
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return 20;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellId = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    if (nil == cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
-    }
-    cell.textLabel.text = @"111111";
+    
+    WJRightTableViewCell *cell = [WJRightTableViewCell rightCellWithTableView:tableView];
     return cell;
 }
 
-
+#pragma mark - <tableviewDelegate>
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 74;
+}
 
 
 @end
