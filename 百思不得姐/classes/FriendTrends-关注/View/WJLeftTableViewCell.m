@@ -7,6 +7,7 @@
 //
 
 #import "WJLeftTableViewCell.h"
+#import "WJUserResult.h"
 
 @interface WJLeftTableViewCell ()
 /** 选中时显示的指示器控件 */
@@ -71,9 +72,9 @@
  *
  *  @param category NSArray ＊
  */
-- (void)setCategory:(NSArray *)category{
+- (void)setCategory:(WJUserResult *)category{
     _category = category;
-    self.categoryTextLabel.text = @"haha";
+    self.categoryTextLabel.text = category.name;
 }
 
 

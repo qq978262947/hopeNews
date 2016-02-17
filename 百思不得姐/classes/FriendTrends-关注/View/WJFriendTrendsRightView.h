@@ -12,6 +12,11 @@
 
 
 /** 右边的用户数据 */
-@property (nonatomic, strong) NSArray *users;
+@property (strong ,nonatomic) NSArray *users;
+
+/**
+ *  头部的刷新控件
+ */
+@property (weak ,nonatomic)UITableView *tableView;
 
 @end

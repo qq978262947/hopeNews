@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MJExtension.h>
 
-@interface WJCategoryMode : NSObject
+@interface WJCategoryParam : NSObject
 
 @property (strong,nonatomic)NSString *a;
 

@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		44E53C87D90569C16218B006 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43CD0F108F2A540F2C3785 /* libPods.a */; };
-		DA4E165C1C745AB800CE8471 /* WJCategoryMode.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E165B1C745AB800CE8471 /* WJCategoryMode.m */; };
+		DA4E165C1C745AB800CE8471 /* WJCategoryParam.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E165B1C745AB800CE8471 /* WJCategoryParam.m */; };
 		DA4E16621C745FE500CE8471 /* WJHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16611C745FE500CE8471 /* WJHttpTool.m */; };
 		DA4E16651C746D2800CE8471 /* WJRightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16641C746D2800CE8471 /* WJRightTableViewCell.m */; };
 		DA4E16671C746D7C00CE8471 /* WJRightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4E16661C746D7C00CE8471 /* WJRightTableViewCell.xib */; };
+		DA4E166A1C7493C500CE8471 /* WJBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16691C7493C500CE8471 /* WJBaseTool.m */; };
+		DA4E166D1C74940700CE8471 /* WJCategoryTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E166C1C74940700CE8471 /* WJCategoryTool.m */; };
+		DA4E16701C74958400CE8471 /* WJUserResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E166F1C74958400CE8471 /* WJUserResult.m */; };
+		DA4E16731C74965000CE8471 /* WJRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16721C74965000CE8471 /* WJRecommendUser.m */; };
+		DA4E16761C74A34800CE8471 /* WJCategoryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16751C74A34800CE8471 /* WJCategoryResult.m */; };
 		DA982AD01C7304E2003C6D52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982ACF1C7304E2003C6D52 /* main.m */; };
 		DA982AD31C7304E2003C6D52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982AD21C7304E2003C6D52 /* AppDelegate.m */; };
 		DA982AD91C7304E2003C6D52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA982AD71C7304E2003C6D52 /* Main.storyboard */; };
@@ -59,13 +64,23 @@
 		3D43CD0F108F2A540F2C3785 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3962BAC024308679A7ED0E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		90FBF1F81ED4B3C5F46B00A0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		DA4E165A1C745AB800CE8471 /* WJCategoryMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCategoryMode.h; sourceTree = "<group>"; };
-		DA4E165B1C745AB800CE8471 /* WJCategoryMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCategoryMode.m; sourceTree = "<group>"; };
+		DA4E165A1C745AB800CE8471 /* WJCategoryParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCategoryParam.h; sourceTree = "<group>"; };
+		DA4E165B1C745AB800CE8471 /* WJCategoryParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCategoryParam.m; sourceTree = "<group>"; };
 		DA4E16601C745FE500CE8471 /* WJHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJHttpTool.h; sourceTree = "<group>"; };
 		DA4E16611C745FE500CE8471 /* WJHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJHttpTool.m; sourceTree = "<group>"; };
 		DA4E16631C746D2800CE8471 /* WJRightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJRightTableViewCell.h; sourceTree = "<group>"; };
 		DA4E16641C746D2800CE8471 /* WJRightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJRightTableViewCell.m; sourceTree = "<group>"; };
 		DA4E16661C746D7C00CE8471 /* WJRightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJRightTableViewCell.xib; sourceTree = "<group>"; };
+		DA4E16681C7493C500CE8471 /* WJBaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJBaseTool.h; sourceTree = "<group>"; };
+		DA4E16691C7493C500CE8471 /* WJBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJBaseTool.m; sourceTree = "<group>"; };
+		DA4E166B1C74940700CE8471 /* WJCategoryTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCategoryTool.h; sourceTree = "<group>"; };
+		DA4E166C1C74940700CE8471 /* WJCategoryTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCategoryTool.m; sourceTree = "<group>"; };
+		DA4E166E1C74958400CE8471 /* WJUserResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJUserResult.h; sourceTree = "<group>"; };
+		DA4E166F1C74958400CE8471 /* WJUserResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJUserResult.m; sourceTree = "<group>"; };
+		DA4E16711C74965000CE8471 /* WJRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJRecommendUser.h; sourceTree = "<group>"; };
+		DA4E16721C74965000CE8471 /* WJRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJRecommendUser.m; sourceTree = "<group>"; };
+		DA4E16741C74A34800CE8471 /* WJCategoryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCategoryResult.h; sourceTree = "<group>"; };
+		DA4E16751C74A34800CE8471 /* WJCategoryResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCategoryResult.m; sourceTree = "<group>"; };
 		DA982ACB1C7304E2003C6D52 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA982ACF1C7304E2003C6D52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA982AD11C7304E2003C6D52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,8 +174,8 @@
 		DA4E165D1C745E6200CE8471 /* params */ = {
 			isa = PBXGroup;
 			children = (
-				DA4E165A1C745AB800CE8471 /* WJCategoryMode.h */,
-				DA4E165B1C745AB800CE8471 /* WJCategoryMode.m */,
+				DA4E165A1C745AB800CE8471 /* WJCategoryParam.h */,
+				DA4E165B1C745AB800CE8471 /* WJCategoryParam.m */,
 			);
 			name = params;
 			sourceTree = "<group>";
@@ -168,6 +183,12 @@
 		DA4E165E1C745E6D00CE8471 /* results */ = {
 			isa = PBXGroup;
 			children = (
+				DA4E166E1C74958400CE8471 /* WJUserResult.h */,
+				DA4E166F1C74958400CE8471 /* WJUserResult.m */,
+				DA4E16711C74965000CE8471 /* WJRecommendUser.h */,
+				DA4E16721C74965000CE8471 /* WJRecommendUser.m */,
+				DA4E16741C74A34800CE8471 /* WJCategoryResult.h */,
+				DA4E16751C74A34800CE8471 /* WJCategoryResult.m */,
 			);
 			name = results;
 			sourceTree = "<group>";
@@ -177,6 +198,10 @@
 			children = (
 				DA4E16601C745FE500CE8471 /* WJHttpTool.h */,
 				DA4E16611C745FE500CE8471 /* WJHttpTool.m */,
+				DA4E16681C7493C500CE8471 /* WJBaseTool.h */,
+				DA4E16691C7493C500CE8471 /* WJBaseTool.m */,
+				DA4E166B1C74940700CE8471 /* WJCategoryTool.h */,
+				DA4E166C1C74940700CE8471 /* WJCategoryTool.m */,
 			);
 			name = tool;
 			sourceTree = "<group>";
@@ -667,14 +692,19 @@
 				DA982AD01C7304E2003C6D52 /* main.m in Sources */,
 				DA982B2D1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m in Sources */,
 				DA982B3A1C730DFD003C6D52 /* WJNavgationController.m in Sources */,
+				DA4E16701C74958400CE8471 /* WJUserResult.m in Sources */,
 				DA982B1B1C7309A6003C6D52 /* WJFriendTrendsController.m in Sources */,
 				DA982B211C730A0A003C6D52 /* WJNewController.m in Sources */,
-				DA4E165C1C745AB800CE8471 /* WJCategoryMode.m in Sources */,
+				DA4E165C1C745AB800CE8471 /* WJCategoryParam.m in Sources */,
 				DA4E16651C746D2800CE8471 /* WJRightTableViewCell.m in Sources */,
 				DA982B241C730A69003C6D52 /* WJTabBarController.m in Sources */,
 				DA982B1E1C7309EB003C6D52 /* WJMeController.m in Sources */,
+				DA4E166D1C74940700CE8471 /* WJCategoryTool.m in Sources */,
+				DA4E16731C74965000CE8471 /* WJRecommendUser.m in Sources */,
+				DA4E166A1C7493C500CE8471 /* WJBaseTool.m in Sources */,
 				DA982B471C73466B003C6D52 /* WJFriendTrendsLeftView.m in Sources */,
 				DA982B181C73097C003C6D52 /* WJEssenceController.m in Sources */,
+				DA4E16761C74A34800CE8471 /* WJCategoryResult.m in Sources */,
 				DA982B3D1C730EF5003C6D52 /* WJTabBar.m in Sources */,
 				DA982B281C730B9B003C6D52 /* Foundation+Log.m in Sources */,
 				DA982B4A1C734681003C6D52 /* WJFriendTrendsRightView.m in Sources */,

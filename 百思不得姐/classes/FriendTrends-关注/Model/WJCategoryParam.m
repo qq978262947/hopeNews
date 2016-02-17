@@ -6,9 +6,9 @@
 //  Copyright © 2016年 汪俊. All rights reserved.
 //
 
-#import "WJCategoryMode.h"
+#import "WJCategoryParam.h"
 
-@implementation WJCategoryMode
+@implementation WJCategoryParam
 
 
 

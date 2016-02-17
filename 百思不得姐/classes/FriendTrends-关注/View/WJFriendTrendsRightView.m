@@ -11,7 +11,6 @@
 
 @interface WJFriendTrendsRightView () <UITableViewDelegate , UITableViewDataSource>
 
-@property (nonatomic,weak)UITableView *tableView;
 
 @end
 

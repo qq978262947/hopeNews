@@ -56,7 +56,7 @@
 
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;//self.categories.count;
+    return self.categories.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -67,12 +67,20 @@
 
 #pragma mark - <UITableViewDelegate>
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    if ([self.delegate respondsToSelector:@selector(friendsLeftView:didClickIndex:)]) {
+        [self.delegate friendsLeftView:self didClickIndex:indexPath.row];
+    }
 }
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 44;
+}
+
+
+- (void)setCategories:(NSArray *)categories{
+    _categories = categories;
+    [self.tableView reloadData];
 }
 
 

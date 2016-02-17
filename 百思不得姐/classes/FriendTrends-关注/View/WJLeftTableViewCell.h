@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-@class WJRecommendController;
+@class WJRecommendController,WJUserResult;
 
 @interface WJLeftTableViewCell : UITableViewCell
-/**
- *  cell的label控件
+
 /**
  *  得到tableview
  *
@@ -23,6 +22,6 @@
 
 
 /** 类别模型 */
-@property (nonatomic, strong) NSArray *category;
+@property (nonatomic, strong) WJUserResult *category;
 
 @end
