@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44E53C87D90569C16218B006 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43CD0F108F2A540F2C3785 /* libPods.a */; };
 		DA982AD01C7304E2003C6D52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982ACF1C7304E2003C6D52 /* main.m */; };
 		DA982AD31C7304E2003C6D52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982AD21C7304E2003C6D52 /* AppDelegate.m */; };
 		DA982AD91C7304E2003C6D52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA982AD71C7304E2003C6D52 /* Main.storyboard */; };
@@ -51,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D43CD0F108F2A540F2C3785 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F3962BAC024308679A7ED0E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		90FBF1F81ED4B3C5F46B00A0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DA982ACB1C7304E2003C6D52 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA982ACF1C7304E2003C6D52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA982AD11C7304E2003C6D52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E53C87D90569C16218B006 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +128,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001A7224E59434A914045616 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F3962BAC024308679A7ED0E /* Pods.debug.xcconfig */,
+				90FBF1F81ED4B3C5F46B00A0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1DECC68C2E3C2967E344E15A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D43CD0F108F2A540F2C3785 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA982AC21C7304E2003C6D52 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +152,8 @@
 				DA982AE71C7304E2003C6D52 /* 百思不得姐Tests */,
 				DA982AF21C7304E2003C6D52 /* 百思不得姐UITests */,
 				DA982ACC1C7304E2003C6D52 /* Products */,
+				001A7224E59434A914045616 /* Pods */,
+				1DECC68C2E3C2967E344E15A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,8 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				DA982B071C730881003C6D52 /* Controller */,
-				DA982B081C730881003C6D52 /* Model */,
 				DA982B091C730881003C6D52 /* View */,
+				DA982B081C730881003C6D52 /* Model */,
 			);
 			path = "FriendTrends-关注";
 			sourceTree = "<group>";
@@ -416,9 +440,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA982AF81C7304E2003C6D52 /* Build configuration list for PBXNativeTarget "百思不得姐" */;
 			buildPhases = (
+				AC8AE2F1A35BA77D49B10BD9 /* Check Pods Manifest.lock */,
 				DA982AC71C7304E2003C6D52 /* Sources */,
 				DA982AC81C7304E2003C6D52 /* Frameworks */,
 				DA982AC91C7304E2003C6D52 /* Resources */,
+				19A0D6AD49D3B0DCE205A8A2 /* Embed Pods Frameworks */,
+				3E4F8666D30E42B9FBD84AA6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -536,6 +563,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19A0D6AD49D3B0DCE205A8A2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E4F8666D30E42B9FBD84AA6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC8AE2F1A35BA77D49B10BD9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA982AC71C7304E2003C6D52 /* Sources */ = {
@@ -696,6 +771,7 @@
 		};
 		DA982AF91C7304E2003C6D52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F3962BAC024308679A7ED0E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/百思不得姐/classes/Other-其他/PrefixHeader.pch";
@@ -708,6 +784,7 @@
 		};
 		DA982AFA1C7304E2003C6D52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90FBF1F81ED4B3C5F46B00A0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/百思不得姐/classes/Other-其他/PrefixHeader.pch";

@@ -42,6 +42,8 @@
     self.tableView = tableView;
     tableView.delegate = self;
     tableView.dataSource = self;
+    
+    
 }
 
 #pragma mark - <UITableViewDataSource>
