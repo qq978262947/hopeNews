@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		44E53C87D90569C16218B006 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43CD0F108F2A540F2C3785 /* libPods.a */; };
 		DA4E165C1C745AB800CE8471 /* WJCategoryParam.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E165B1C745AB800CE8471 /* WJCategoryParam.m */; };
-		DA4E16621C745FE500CE8471 /* WJHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16611C745FE500CE8471 /* WJHttpTool.m */; };
 		DA4E16651C746D2800CE8471 /* WJRightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16641C746D2800CE8471 /* WJRightTableViewCell.m */; };
 		DA4E16671C746D7C00CE8471 /* WJRightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4E16661C746D7C00CE8471 /* WJRightTableViewCell.xib */; };
-		DA4E166A1C7493C500CE8471 /* WJBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16691C7493C500CE8471 /* WJBaseTool.m */; };
-		DA4E166D1C74940700CE8471 /* WJCategoryTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E166C1C74940700CE8471 /* WJCategoryTool.m */; };
 		DA4E16701C74958400CE8471 /* WJUserResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E166F1C74958400CE8471 /* WJUserResult.m */; };
 		DA4E16731C74965000CE8471 /* WJRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16721C74965000CE8471 /* WJRecommendUser.m */; };
 		DA4E16761C74A34800CE8471 /* WJCategoryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4E16751C74A34800CE8471 /* WJCategoryResult.m */; };
+		DA6CF5CD1C75816C00734D68 /* WJBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF5C81C75816C00734D68 /* WJBaseTool.m */; };
+		DA6CF5CE1C75816C00734D68 /* WJCategoryTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF5CA1C75816C00734D68 /* WJCategoryTool.m */; };
+		DA6CF5CF1C75816C00734D68 /* WJHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF5CC1C75816C00734D68 /* WJHttpTool.m */; };
+		DA6CF5D61C75817D00734D68 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF5D11C75817D00734D68 /* Foundation+Log.m */; };
+		DA6CF5D71C75817D00734D68 /* UIBarButtonItem+WJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF5D31C75817D00734D68 /* UIBarButtonItem+WJExtension.m */; };
+		DA6CF5D81C75817D00734D68 /* UIView+WJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6CF5D51C75817D00734D68 /* UIView+WJExtension.m */; };
 		DA982AD01C7304E2003C6D52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982ACF1C7304E2003C6D52 /* main.m */; };
 		DA982AD31C7304E2003C6D52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982AD21C7304E2003C6D52 /* AppDelegate.m */; };
 		DA982AD91C7304E2003C6D52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA982AD71C7304E2003C6D52 /* Main.storyboard */; };
@@ -29,9 +32,6 @@
 		DA982B1E1C7309EB003C6D52 /* WJMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B1D1C7309EB003C6D52 /* WJMeController.m */; };
 		DA982B211C730A0A003C6D52 /* WJNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B201C730A0A003C6D52 /* WJNewController.m */; };
 		DA982B241C730A69003C6D52 /* WJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B231C730A69003C6D52 /* WJTabBarController.m */; };
-		DA982B281C730B9B003C6D52 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B271C730B9B003C6D52 /* Foundation+Log.m */; };
-		DA982B2D1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B2A1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m */; };
-		DA982B2E1C730BE6003C6D52 /* UIView+WJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B2C1C730BE6003C6D52 /* UIView+WJExtension.m */; };
 		DA982B3A1C730DFD003C6D52 /* WJNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B391C730DFD003C6D52 /* WJNavgationController.m */; };
 		DA982B3D1C730EF5003C6D52 /* WJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B3C1C730EF5003C6D52 /* WJTabBar.m */; };
 		DA982B3F1C731E2D003C6D52 /* WJFriendTrendsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA982B3E1C731E2D003C6D52 /* WJFriendTrendsController.xib */; };
@@ -66,21 +66,26 @@
 		90FBF1F81ED4B3C5F46B00A0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DA4E165A1C745AB800CE8471 /* WJCategoryParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCategoryParam.h; sourceTree = "<group>"; };
 		DA4E165B1C745AB800CE8471 /* WJCategoryParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCategoryParam.m; sourceTree = "<group>"; };
-		DA4E16601C745FE500CE8471 /* WJHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJHttpTool.h; sourceTree = "<group>"; };
-		DA4E16611C745FE500CE8471 /* WJHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJHttpTool.m; sourceTree = "<group>"; };
 		DA4E16631C746D2800CE8471 /* WJRightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJRightTableViewCell.h; sourceTree = "<group>"; };
 		DA4E16641C746D2800CE8471 /* WJRightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJRightTableViewCell.m; sourceTree = "<group>"; };
 		DA4E16661C746D7C00CE8471 /* WJRightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJRightTableViewCell.xib; sourceTree = "<group>"; };
-		DA4E16681C7493C500CE8471 /* WJBaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJBaseTool.h; sourceTree = "<group>"; };
-		DA4E16691C7493C500CE8471 /* WJBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJBaseTool.m; sourceTree = "<group>"; };
-		DA4E166B1C74940700CE8471 /* WJCategoryTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCategoryTool.h; sourceTree = "<group>"; };
-		DA4E166C1C74940700CE8471 /* WJCategoryTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCategoryTool.m; sourceTree = "<group>"; };
 		DA4E166E1C74958400CE8471 /* WJUserResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJUserResult.h; sourceTree = "<group>"; };
 		DA4E166F1C74958400CE8471 /* WJUserResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJUserResult.m; sourceTree = "<group>"; };
 		DA4E16711C74965000CE8471 /* WJRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJRecommendUser.h; sourceTree = "<group>"; };
 		DA4E16721C74965000CE8471 /* WJRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJRecommendUser.m; sourceTree = "<group>"; };
 		DA4E16741C74A34800CE8471 /* WJCategoryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCategoryResult.h; sourceTree = "<group>"; };
 		DA4E16751C74A34800CE8471 /* WJCategoryResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCategoryResult.m; sourceTree = "<group>"; };
+		DA6CF5C71C75816C00734D68 /* WJBaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJBaseTool.h; sourceTree = "<group>"; };
+		DA6CF5C81C75816C00734D68 /* WJBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJBaseTool.m; sourceTree = "<group>"; };
+		DA6CF5C91C75816C00734D68 /* WJCategoryTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCategoryTool.h; sourceTree = "<group>"; };
+		DA6CF5CA1C75816C00734D68 /* WJCategoryTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCategoryTool.m; sourceTree = "<group>"; };
+		DA6CF5CB1C75816C00734D68 /* WJHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJHttpTool.h; sourceTree = "<group>"; };
+		DA6CF5CC1C75816C00734D68 /* WJHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJHttpTool.m; sourceTree = "<group>"; };
+		DA6CF5D11C75817D00734D68 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		DA6CF5D21C75817D00734D68 /* UIBarButtonItem+WJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WJExtension.h"; sourceTree = "<group>"; };
+		DA6CF5D31C75817D00734D68 /* UIBarButtonItem+WJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WJExtension.m"; sourceTree = "<group>"; };
+		DA6CF5D41C75817D00734D68 /* UIView+WJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WJExtension.h"; sourceTree = "<group>"; };
+		DA6CF5D51C75817D00734D68 /* UIView+WJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WJExtension.m"; sourceTree = "<group>"; };
 		DA982ACB1C7304E2003C6D52 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA982ACF1C7304E2003C6D52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA982AD11C7304E2003C6D52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,11 +111,6 @@
 		DA982B221C730A69003C6D52 /* WJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WJTabBarController.h; path = "百思不得姐/classes/New-新帖/Controller/WJTabBarController.h"; sourceTree = SOURCE_ROOT; };
 		DA982B231C730A69003C6D52 /* WJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WJTabBarController.m; path = "百思不得姐/classes/New-新帖/Controller/WJTabBarController.m"; sourceTree = SOURCE_ROOT; };
 		DA982B251C730B47003C6D52 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "classes/Other-其他/PrefixHeader.pch"; sourceTree = "<group>"; };
-		DA982B271C730B9B003C6D52 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
-		DA982B291C730BE6003C6D52 /* UIBarButtonItem+WJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WJExtension.h"; sourceTree = "<group>"; };
-		DA982B2A1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WJExtension.m"; sourceTree = "<group>"; };
-		DA982B2B1C730BE6003C6D52 /* UIView+WJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WJExtension.h"; sourceTree = "<group>"; };
-		DA982B2C1C730BE6003C6D52 /* UIView+WJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WJExtension.m"; sourceTree = "<group>"; };
 		DA982B381C730DFD003C6D52 /* WJNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WJNavgationController.h; path = "百思不得姐/classes/New-新帖/Controller/WJNavgationController.h"; sourceTree = SOURCE_ROOT; };
 		DA982B391C730DFD003C6D52 /* WJNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WJNavgationController.m; path = "百思不得姐/classes/New-新帖/Controller/WJNavgationController.m"; sourceTree = SOURCE_ROOT; };
 		DA982B3B1C730EF5003C6D52 /* WJTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WJTabBar.h; path = "百思不得姐/classes/New-新帖/Controller/WJTabBar.h"; sourceTree = SOURCE_ROOT; };
@@ -193,17 +193,29 @@
 			name = results;
 			sourceTree = "<group>";
 		};
-		DA4E165F1C745FCB00CE8471 /* tool */ = {
+		DA6CF5C61C75816C00734D68 /* tool */ = {
 			isa = PBXGroup;
 			children = (
-				DA4E16601C745FE500CE8471 /* WJHttpTool.h */,
-				DA4E16611C745FE500CE8471 /* WJHttpTool.m */,
-				DA4E16681C7493C500CE8471 /* WJBaseTool.h */,
-				DA4E16691C7493C500CE8471 /* WJBaseTool.m */,
-				DA4E166B1C74940700CE8471 /* WJCategoryTool.h */,
-				DA4E166C1C74940700CE8471 /* WJCategoryTool.m */,
+				DA6CF5C71C75816C00734D68 /* WJBaseTool.h */,
+				DA6CF5C81C75816C00734D68 /* WJBaseTool.m */,
+				DA6CF5C91C75816C00734D68 /* WJCategoryTool.h */,
+				DA6CF5CA1C75816C00734D68 /* WJCategoryTool.m */,
+				DA6CF5CB1C75816C00734D68 /* WJHttpTool.h */,
+				DA6CF5CC1C75816C00734D68 /* WJHttpTool.m */,
 			);
-			name = tool;
+			path = tool;
+			sourceTree = "<group>";
+		};
+		DA6CF5D01C75817D00734D68 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CF5D11C75817D00734D68 /* Foundation+Log.m */,
+				DA6CF5D21C75817D00734D68 /* UIBarButtonItem+WJExtension.h */,
+				DA6CF5D31C75817D00734D68 /* UIBarButtonItem+WJExtension.m */,
+				DA6CF5D41C75817D00734D68 /* UIView+WJExtension.h */,
+				DA6CF5D51C75817D00734D68 /* UIView+WJExtension.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 		DA982AC21C7304E2003C6D52 = {
@@ -425,8 +437,8 @@
 		DA982B121C730881003C6D52 /* Other-其他 */ = {
 			isa = PBXGroup;
 			children = (
-				DA4E165F1C745FCB00CE8471 /* tool */,
-				DA982B261C730B57003C6D52 /* category */,
+				DA6CF5D01C75817D00734D68 /* category */,
+				DA6CF5C61C75816C00734D68 /* tool */,
 				DA982B131C7308D8003C6D52 /* Controller */,
 				DA982B141C7308D8003C6D52 /* Model */,
 				DA982B151C7308D8003C6D52 /* View */,
@@ -463,18 +475,6 @@
 			name = View;
 			path = "百思不得姐/classes/Essence-精华/View副本";
 			sourceTree = SOURCE_ROOT;
-		};
-		DA982B261C730B57003C6D52 /* category */ = {
-			isa = PBXGroup;
-			children = (
-				DA982B291C730BE6003C6D52 /* UIBarButtonItem+WJExtension.h */,
-				DA982B2A1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m */,
-				DA982B2B1C730BE6003C6D52 /* UIView+WJExtension.h */,
-				DA982B2C1C730BE6003C6D52 /* UIView+WJExtension.m */,
-				DA982B271C730B9B003C6D52 /* Foundation+Log.m */,
-			);
-			name = category;
-			sourceTree = "<group>";
 		};
 		DA982B4B1C73527A003C6D52 /* left */ = {
 			isa = PBXGroup;
@@ -685,28 +685,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA4E16621C745FE500CE8471 /* WJHttpTool.m in Sources */,
+				DA6CF5CF1C75816C00734D68 /* WJHttpTool.m in Sources */,
 				DA982AD31C7304E2003C6D52 /* AppDelegate.m in Sources */,
-				DA982B2E1C730BE6003C6D52 /* UIView+WJExtension.m in Sources */,
+				DA6CF5D71C75817D00734D68 /* UIBarButtonItem+WJExtension.m in Sources */,
 				DA982B431C733876003C6D52 /* WJRecommendController.m in Sources */,
 				DA982AD01C7304E2003C6D52 /* main.m in Sources */,
-				DA982B2D1C730BE6003C6D52 /* UIBarButtonItem+WJExtension.m in Sources */,
 				DA982B3A1C730DFD003C6D52 /* WJNavgationController.m in Sources */,
+				DA6CF5D61C75817D00734D68 /* Foundation+Log.m in Sources */,
 				DA4E16701C74958400CE8471 /* WJUserResult.m in Sources */,
 				DA982B1B1C7309A6003C6D52 /* WJFriendTrendsController.m in Sources */,
+				DA6CF5D81C75817D00734D68 /* UIView+WJExtension.m in Sources */,
 				DA982B211C730A0A003C6D52 /* WJNewController.m in Sources */,
+				DA6CF5CE1C75816C00734D68 /* WJCategoryTool.m in Sources */,
 				DA4E165C1C745AB800CE8471 /* WJCategoryParam.m in Sources */,
 				DA4E16651C746D2800CE8471 /* WJRightTableViewCell.m in Sources */,
 				DA982B241C730A69003C6D52 /* WJTabBarController.m in Sources */,
 				DA982B1E1C7309EB003C6D52 /* WJMeController.m in Sources */,
-				DA4E166D1C74940700CE8471 /* WJCategoryTool.m in Sources */,
 				DA4E16731C74965000CE8471 /* WJRecommendUser.m in Sources */,
-				DA4E166A1C7493C500CE8471 /* WJBaseTool.m in Sources */,
 				DA982B471C73466B003C6D52 /* WJFriendTrendsLeftView.m in Sources */,
+				DA6CF5CD1C75816C00734D68 /* WJBaseTool.m in Sources */,
 				DA982B181C73097C003C6D52 /* WJEssenceController.m in Sources */,
 				DA4E16761C74A34800CE8471 /* WJCategoryResult.m in Sources */,
 				DA982B3D1C730EF5003C6D52 /* WJTabBar.m in Sources */,
-				DA982B281C730B9B003C6D52 /* Foundation+Log.m in Sources */,
 				DA982B4A1C734681003C6D52 /* WJFriendTrendsRightView.m in Sources */,
 				DA982B4F1C735306003C6D52 /* WJLeftTableViewCell.m in Sources */,
 			);

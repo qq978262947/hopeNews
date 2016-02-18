@@ -40,7 +40,6 @@
     [self setupRefresh];
     //加载分类数据
     [self loadMoreCategories];
-    
 }
 
 /**
@@ -83,6 +82,8 @@
     [WJCategoryTool FriendsTrendsStatusesWithParam:categoryParams success:^(WJCategoryResult *result) {
         // 隐藏指示器
         [SVProgressHUD dismiss];
+        // 默认选中首行
+        [self.rightView.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
          self.leftView.categories = result.list;
     } failure:^(NSError *error) {
         // 显示失败信息
@@ -94,7 +95,7 @@
  *  加载右侧的最新用户数据
  */
 - (void)loadNewUserData{
-
+    
 }
 /**
  *  加载右侧的更多用户数据
