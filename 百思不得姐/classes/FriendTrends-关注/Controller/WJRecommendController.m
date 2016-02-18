@@ -59,9 +59,9 @@
 - (void)setupRefresh
 {
     self.rightView.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewUserData)];
-    
-    self.rightView.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
-    self.rightView.tableView.mj_footer.hidden = YES;
+//    [MJRefreshBackGifFooter];
+    self.rightView.tableView.mj_footer = [MJRefreshBackGifFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
+//    self.rightView.tableView.mj_footer.hidden = YES;
 }
 
 /**
@@ -95,6 +95,9 @@
  *  加载右侧的最新用户数据
  */
 - (void)loadNewUserData{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.rightView.tableView.mj_header endRefreshing];
+    });
     
 }
 /**
@@ -115,7 +118,7 @@
  */
 - (void)friendsLeftView:(WJFriendTrendsLeftView *)leftView didClickIndex:(NSInteger)index{
     // 结束刷新
-    
+    [self loadNewUserData];
 }
 
 @end
