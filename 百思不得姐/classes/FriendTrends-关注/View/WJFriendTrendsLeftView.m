@@ -11,7 +11,7 @@
 
 @interface WJFriendTrendsLeftView () <UITableViewDelegate , UITableViewDataSource>
 
-@property (nonatomic,weak)UITableView *tableView;
+
 
 @end
 
@@ -52,6 +52,8 @@
     UIView *bgView = [[UIView alloc]initWithFrame:tableView.bounds];
     bgView.backgroundColor = WJRGBColor(244, 244, 244);;
     [tableView setBackgroundView:bgView];
+    
+    
 }
 
 #pragma mark - <UITableViewDataSource>

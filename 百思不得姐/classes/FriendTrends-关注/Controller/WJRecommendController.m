@@ -82,9 +82,11 @@
     [WJCategoryTool FriendsTrendsStatusesWithParam:categoryParams success:^(WJCategoryResult *result) {
         // 隐藏指示器
         [SVProgressHUD dismiss];
+        // weitableview赋值
+        self.leftView.categories = result.list;
         // 默认选中首行
-        [self.rightView.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
-         self.leftView.categories = result.list;
+        [self.leftView.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
+         
     } failure:^(NSError *error) {
         // 显示失败信息
         [SVProgressHUD showErrorWithStatus:@"加载推荐信息失败!"];
@@ -95,6 +97,9 @@
  *  加载右侧的最新用户数据
  */
 - (void)loadNewUserData{
+    
+    
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.rightView.tableView.mj_header endRefreshing];
     });

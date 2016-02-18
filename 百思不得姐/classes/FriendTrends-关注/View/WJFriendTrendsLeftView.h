@@ -27,5 +27,6 @@
 @property (strong ,nonatomic) NSArray *categories;
 /**WJFriendTrendsLeftView的代理*/
 @property (weak ,nonatomic)id<WJFriendTrendsLeftViewDelegate> delegate;
-
+/** 显示数据的tableview*/
+@property (nonatomic,weak)UITableView *tableView;
 @end

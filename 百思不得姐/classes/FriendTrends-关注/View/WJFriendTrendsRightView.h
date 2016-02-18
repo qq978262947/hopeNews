@@ -15,7 +15,7 @@
 @property (strong ,nonatomic) NSArray *users;
 
 /**
- *  头部的刷新控件
+ *  显示数据的tableview
  */
 @property (weak ,nonatomic)UITableView *tableView;
 

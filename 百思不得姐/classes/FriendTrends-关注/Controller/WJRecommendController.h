@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface WJRecommendController : UIViewController
-
+/**
+ *  加载右侧的最新用户数据
+ */
+- (void)loadNewUserData;
 @end

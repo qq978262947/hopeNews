@@ -55,6 +55,7 @@
     self.backgroundColor = WJRGBColor(244, 244, 244);
     //设置指示器的颜色
     self.selectedIndicator.backgroundColor = WJRGBColor(219, 21, 26);
+    
 }
 
 /**
