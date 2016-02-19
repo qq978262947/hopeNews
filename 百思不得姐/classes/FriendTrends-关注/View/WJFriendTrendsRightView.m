@@ -54,12 +54,13 @@
 
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    return self.users.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     WJRightTableViewCell *cell = [WJRightTableViewCell rightCellWithTableView:tableView];
+    cell.user = self.users[indexPath.row];
     return cell;
 }
 

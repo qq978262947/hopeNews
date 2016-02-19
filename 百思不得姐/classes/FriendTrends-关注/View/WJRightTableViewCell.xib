@@ -24,6 +24,9 @@
                         <state key="normal" title="+ 关注">
                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
+                        <connections>
+                            <action selector="clickAddFriend:" destination="yhA-ix-sSq" eventType="touchUpInside" id="r8w-tK-oxb"/>
+                        </connections>
                     </button>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MyY-jV-siY">
                         <rect key="frame" x="5" y="2" width="70" height="69.5"/>
@@ -64,6 +67,11 @@
                     <constraint firstItem="MyY-jV-siY" firstAttribute="top" secondItem="NPt-WT-zFy" secondAttribute="top" constant="2" id="WjY-pz-Xsp"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="fancs" destination="9TT-Wl-3Qh" id="Iua-d1-qGu"/>
+                <outlet property="header" destination="MyY-jV-siY" id="cVp-pg-uTP"/>
+                <outlet property="name" destination="RCg-9h-PoD" id="EmC-zq-BMv"/>
+            </connections>
             <point key="canvasLocation" x="70" y="95"/>
         </tableViewCell>
     </objects>

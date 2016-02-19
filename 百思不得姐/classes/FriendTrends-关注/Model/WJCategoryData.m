@@ -6,11 +6,16 @@
 //  Copyright © 2016年 汪俊. All rights reserved.
 //
 
-#import "WJCategoryResult.h"
 #import "WJCategoryData.h"
 
-@implementation WJCategoryResult
+@implementation WJCategoryData
 
-
+- (NSMutableArray *)users
+{
+    if (!_users) {
+        _users = [NSMutableArray array];
+    }
+    return _users;
+}
 
 @end

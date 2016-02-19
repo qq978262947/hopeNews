@@ -7,8 +7,18 @@
 //
 
 #import "WJRightTableViewCell.h"
+#import <UIImageView+WebCache.h>
+
+@interface WJRightTableViewCell ()
+@property (weak, nonatomic) IBOutlet UIImageView *header;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *fancs;
+
+@end
 
 @implementation WJRightTableViewCell
+- (IBAction)clickAddFriend:(id)sender {
+}
 /**
  *  得到tableview
  *
@@ -53,6 +63,13 @@
     
 }
 
+- (void)setUser:(WJRecommendUser *)user{
+    _user = user;
+    
+    [self.header sd_setImageWithURL:[NSURL URLWithString:user.header]];
+    self.name.text = user.screen_name;
+    self.fancs.text = [NSString stringWithFormat:@"%li", user.fans_count];
+}
 
 
 @end

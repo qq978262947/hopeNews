@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WJRecommendUser.h"
 
 @interface WJRightTableViewCell : UITableViewCell
 + (WJRightTableViewCell *)rightCellWithTableView:(UITableView *)tableView;
+
+@property (strong,nonatomic)WJRecommendUser *user;
+
 @end

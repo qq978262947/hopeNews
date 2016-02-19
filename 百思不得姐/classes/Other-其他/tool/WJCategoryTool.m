@@ -9,10 +9,15 @@
 #import "WJCategoryTool.h"
 
 
+
 @implementation WJCategoryTool
 
 + (void)FriendsTrendsStatusesWithParam:(WJCategoryParam *)param success:(void (^)(WJCategoryResult *result))success failure:(void (^)(NSError *error))failure{
     [self getWithUrl:@"http://api.budejie.com/api/api_open.php" param:param resultClass:[WJCategoryResult class] success:success failure:failure];
+}
+
++ (void)FriendsTrendsUsersWithParam:(WJCategoryParam *)param success:(void (^)(WJUserResult *result))success failure:(void (^)(NSError *error))failure{
+    [self getWithUrl:@"http://api.budejie.com/api/api_open.php" param:param resultClass:[WJUserResult class] success:success failure:failure];
 }
 
 @end

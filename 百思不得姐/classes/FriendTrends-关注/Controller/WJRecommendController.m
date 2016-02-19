@@ -9,11 +9,12 @@
 #import "WJRecommendController.h"
 #import "WJCategoryParam.h"
 #import "WJCategoryTool.h"
-#import "WJUserResult.h"
+#import "WJCategoryData.h"
 #import "WJFriendTrendsLeftView.h"
 #import "WJFriendTrendsRightView.h"
 #import <MJRefresh.h>
 #import <SVProgressHUD.h>
+#import "WJRecommendUser.h"
 
 #define WJSelectedCategory self.leftView.categories[self.rightView.tableView.indexPathForSelectedRow.row]
 
@@ -76,7 +77,7 @@
     categoryParams.c = @"subscribe";
     [WJCategoryResult mj_setupObjectClassInArray:^NSDictionary *{
         return @{
-                 @"list" : [WJUserResult class]
+                 @"list" : [WJCategoryData class]
                  };
     }];
     [WJCategoryTool FriendsTrendsStatusesWithParam:categoryParams success:^(WJCategoryResult *result) {
@@ -86,7 +87,8 @@
         self.leftView.categories = result.list;
         // 默认选中首行
         [self.leftView.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
-         
+        [self loadNewUserData];
+        
     } failure:^(NSError *error) {
         // 显示失败信息
         [SVProgressHUD showErrorWithStatus:@"加载推荐信息失败!"];
@@ -98,11 +100,23 @@
  */
 - (void)loadNewUserData{
     
-    
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.rightView.tableView.mj_header endRefreshing];
-    });
+    //发送请求
+    WJCategoryParam *categoryParams = [[WJCategoryParam alloc]init];
+    categoryParams.a = @"category";
+    categoryParams.c = @"subscribe";
+    [WJCategoryResult mj_setupObjectClassInArray:^NSDictionary *{
+        return @{
+                 @"list" : [WJRecommendUser class]
+                 };
+    }];
+    [WJCategoryTool FriendsTrendsUsersWithParam:categoryParams success:^(WJUserResult *result) {
+        // weitableview赋值
+        self.rightView.users = result.list;
+        
+    } failure:^(NSError *error) {
+        // 显示失败信息
+        [SVProgressHUD showErrorWithStatus:@"加载推荐信息失败!"];
+    }];
     
 }
 /**

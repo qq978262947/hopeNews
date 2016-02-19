@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class WJRecommendController,WJUserResult;
+@class WJRecommendController,WJCategoryData;
 
 @interface WJLeftTableViewCell : UITableViewCell
 
@@ -22,6 +22,6 @@
 
 
 /** 类别模型 */
-@property (nonatomic, strong) WJUserResult *category;
+@property (nonatomic, strong) WJCategoryData *category;
 
 @end
