@@ -16,7 +16,7 @@
 #import <SVProgressHUD.h>
 #import "WJRecommendUser.h"
 
-#define WJSelectedCategory self.leftView.categories[self.rightView.tableView.indexPathForSelectedRow.row]
+#define WJSelectedCategory self.leftView.categories[self.index]
 
 @interface WJRecommendController () <WJFriendTrendsLeftViewDelegate>
 /**
@@ -27,6 +27,14 @@
  *  右边用户数据的视图
  */
 @property (weak, nonatomic) IBOutlet WJFriendTrendsRightView *rightView;
+/**
+ *  保存用户当前点击的行数
+ */
+@property (assign, nonatomic)long index;
+/**
+ *  保存用户当前全球参数
+ */
+@property (strong, nonatomic)WJCategoryParam *categoryParams;
 
 @end
 
@@ -61,7 +69,7 @@
 {
     self.rightView.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewUserData)];
 //    [MJRefreshBackGifFooter];
-    self.rightView.tableView.mj_footer = [MJRefreshBackGifFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
+    self.rightView.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
 //    self.rightView.tableView.mj_footer.hidden = YES;
 }
 
@@ -100,31 +108,79 @@
  */
 - (void)loadNewUserData{
     
-    //发送请求
-    WJCategoryParam *categoryParams = [[WJCategoryParam alloc]init];
-    categoryParams.a = @"category";
-    categoryParams.c = @"subscribe";
-    [WJCategoryResult mj_setupObjectClassInArray:^NSDictionary *{
-        return @{
-                 @"list" : [WJRecommendUser class]
-                 };
-    }];
-    [WJCategoryTool FriendsTrendsUsersWithParam:categoryParams success:^(WJUserResult *result) {
-        // weitableview赋值
-        self.rightView.users = result.list;
-        
-    } failure:^(NSError *error) {
-        // 显示失败信息
-        [SVProgressHUD showErrorWithStatus:@"加载推荐信息失败!"];
-    }];
+    WJCategoryData *categoryData = WJSelectedCategory;
+    categoryData.currentPage = 1;
+    [self loadUsersWithCategoryData:categoryData];
     
 }
 /**
  *  加载右侧的更多用户数据
  */
 - (void)loadMoreUsers{
-    
+    WJCategoryData *categoryData = WJSelectedCategory;
+    categoryData.currentPage ++;
+    [self loadUsersWithCategoryData:categoryData];
 }
+//加载最新数据
+- (void)loadUsersWithCategoryData:(WJCategoryData *)categoryData{
+
+    WJCategoryData *cd = WJSelectedCategory;
+    //发送请求
+    WJCategoryParam *categoryParams = [[WJCategoryParam alloc]init];
+    categoryParams.a = @"list";
+    categoryParams.c = @"subscribe";
+    categoryParams.category_id = @(categoryData.id);
+    categoryParams.page = @(categoryData.currentPage);
+    self.categoryParams = categoryParams;
+    [WJUserResult mj_setupObjectClassInArray:^NSDictionary *{
+        return @{
+                 @"list" : [WJRecommendUser class]
+                 };
+    }];
+        
+    [WJCategoryTool FriendsTrendsUsersWithParam:categoryParams success:^(WJUserResult *result) {
+//        [self.rightView.tableView.mj_header endRefreshing];
+        if (1 == categoryData.currentPage) {
+            cd.total = [result.total integerValue];
+            [self.rightView.tableView.mj_header endRefreshing];
+            [self.rightView.users removeAllObjects];
+        }
+        // weitableview赋值
+        [self.rightView.users addObjectsFromArray:result.list];
+        cd.users = self.rightView.users;
+        
+        if (self.categoryParams != categoryParams) return;
+
+        [self checkFooterState];
+        [self.rightView.tableView reloadData];
+
+    } failure:^(NSError *error) {
+        // 显示失败信息
+        [SVProgressHUD showErrorWithStatus:@"加载推荐信息失败!"];
+    }];
+}
+
+
+/**
+ * 时刻监测footer的状态
+ */
+- (void)checkFooterState
+{
+     WJCategoryData *cd = WJSelectedCategory;
+    // 每次刷新右边数据时, 都控制footer显示或者隐藏
+    self.rightView.tableView.mj_footer.hidden = (cd.users.count == 0);
+    // 让底部控件结束刷新
+    if (cd.users.count == cd.total) { // 全部数据已经加载完毕
+        [self.rightView.tableView.mj_footer endRefreshingWithNoMoreData];
+    } else { // 还没有加载完毕
+        [self.rightView.tableView.mj_footer endRefreshing];
+    }
+}
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -136,8 +192,22 @@
  *
  */
 - (void)friendsLeftView:(WJFriendTrendsLeftView *)leftView didClickIndex:(NSInteger)index{
-    // 结束刷新
-    [self loadNewUserData];
+    //结束刷新
+    [self.rightView.tableView.mj_header endRefreshing];
+    [self.rightView.tableView.mj_footer endRefreshing];
+    self.index = index;
+    [self.rightView.users removeAllObjects];
+    [self.rightView.tableView reloadData];
+    WJCategoryData *categoryData = self.leftView.categories[index];
+    if (categoryData.users.count) {
+        [self.rightView.users addObjectsFromArray:categoryData.users];
+        [self.rightView.tableView reloadData];
+        return;
+    }else{
+        // 开始刷新数据
+        [self.rightView.tableView.mj_header beginRefreshing];
+    }
+
 }
 
 @end

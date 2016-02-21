@@ -8,6 +8,7 @@
 
 #import "WJFriendTrendsRightView.h"
 #import "WJRightTableViewCell.h"
+#import <MJRefreshBackNormalFooter.h>
 
 @interface WJFriendTrendsRightView () <UITableViewDelegate , UITableViewDataSource>
 
@@ -69,5 +70,11 @@
     return 74;
 }
 
+- (NSMutableArray *)users{
+    if (nil == _users) {
+        _users = [NSMutableArray array];
+    }
+    return _users;
+}
 
 @end

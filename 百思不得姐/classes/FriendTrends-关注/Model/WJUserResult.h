@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface WJUserResult : NSObject
+/**总数*/
+@property (strong, nonatomic)NSNumber *total;
 
-@property (strong,nonatomic)NSArray *list;
+@property (strong, nonatomic)NSArray *list;
 
 @end

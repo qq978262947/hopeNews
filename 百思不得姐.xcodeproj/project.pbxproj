@@ -41,6 +41,17 @@
 		DA982B4A1C734681003C6D52 /* WJFriendTrendsRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B491C734681003C6D52 /* WJFriendTrendsRightView.m */; };
 		DA982B4F1C735306003C6D52 /* WJLeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA982B4E1C735306003C6D52 /* WJLeftTableViewCell.m */; };
 		DA982B511C735356003C6D52 /* WJLeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA982B501C735356003C6D52 /* WJLeftTableViewCell.xib */; };
+		DAD59DCF1C76F2B8007C7E02 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD59DBC1C76F2B8007C7E02 /* UIImage+Alpha.m */; };
+		DAD59DD01C76F2B8007C7E02 /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD59DBE1C76F2B8007C7E02 /* UIImage+Blur.m */; };
+		DAD59DD11C76F2B8007C7E02 /* UIImage+CalculatedSize.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD59DC01C76F2B8007C7E02 /* UIImage+CalculatedSize.m */; };
+		DAD59DD21C76F2B8007C7E02 /* UIImage+Capture.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD59DC21C76F2B8007C7E02 /* UIImage+Capture.m */; };
+		DAD59DD31C76F2B8007C7E02 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD59DC41C76F2B8007C7E02 /* UIImage+Color.m */; };
+		DAD59DD41C76F2B8007C7E02 /* UIImage+FileName.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD59DC61C76F2B8007C7E02 /* UIImage+FileName.m */; };
+		DAD59DD51C76F2B8007C7E02 /* UIImage+FX.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD59DC81C76F2B8007C7E02 /* UIImage+FX.m */; };
+		DAD59DD61C76F2B8007C7E02 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD59DCA1C76F2B8007C7E02 /* UIImage+Resize.m */; };
+		DAD59DD71C76F2B8007C7E02 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD59DCC1C76F2B8007C7E02 /* UIImage+RoundedCorner.m */; };
+		DAD59DD81C76F2B8007C7E02 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD59DCE1C76F2B8007C7E02 /* UIImage+Tint.m */; };
+		DAD59EE41C773A7E007C7E02 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD59EE31C773A7E007C7E02 /* Reveal.framework */; };
 		DAF199A01C761602009162B3 /* WJUserResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF1999F1C761602009162B3 /* WJUserResult.m */; };
 /* End PBXBuildFile section */
 
@@ -127,6 +138,27 @@
 		DA982B4D1C735306003C6D52 /* WJLeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJLeftTableViewCell.h; sourceTree = "<group>"; };
 		DA982B4E1C735306003C6D52 /* WJLeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJLeftTableViewCell.m; sourceTree = "<group>"; };
 		DA982B501C735356003C6D52 /* WJLeftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJLeftTableViewCell.xib; sourceTree = "<group>"; };
+		DAD59DBB1C76F2B8007C7E02 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		DAD59DBC1C76F2B8007C7E02 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		DAD59DBD1C76F2B8007C7E02 /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		DAD59DBE1C76F2B8007C7E02 /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		DAD59DBF1C76F2B8007C7E02 /* UIImage+CalculatedSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CalculatedSize.h"; sourceTree = "<group>"; };
+		DAD59DC01C76F2B8007C7E02 /* UIImage+CalculatedSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CalculatedSize.m"; sourceTree = "<group>"; };
+		DAD59DC11C76F2B8007C7E02 /* UIImage+Capture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Capture.h"; sourceTree = "<group>"; };
+		DAD59DC21C76F2B8007C7E02 /* UIImage+Capture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Capture.m"; sourceTree = "<group>"; };
+		DAD59DC31C76F2B8007C7E02 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		DAD59DC41C76F2B8007C7E02 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		DAD59DC51C76F2B8007C7E02 /* UIImage+FileName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FileName.h"; sourceTree = "<group>"; };
+		DAD59DC61C76F2B8007C7E02 /* UIImage+FileName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FileName.m"; sourceTree = "<group>"; };
+		DAD59DC71C76F2B8007C7E02 /* UIImage+FX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FX.h"; sourceTree = "<group>"; };
+		DAD59DC81C76F2B8007C7E02 /* UIImage+FX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FX.m"; sourceTree = "<group>"; };
+		DAD59DC91C76F2B8007C7E02 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		DAD59DCA1C76F2B8007C7E02 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		DAD59DCB1C76F2B8007C7E02 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		DAD59DCC1C76F2B8007C7E02 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		DAD59DCD1C76F2B8007C7E02 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		DAD59DCE1C76F2B8007C7E02 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		DAD59EE31C773A7E007C7E02 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		DAF1999E1C761602009162B3 /* WJUserResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJUserResult.h; sourceTree = "<group>"; };
 		DAF1999F1C761602009162B3 /* WJUserResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJUserResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44E53C87D90569C16218B006 /* libPods.a in Frameworks */,
+				DAD59EE41C773A7E007C7E02 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +247,7 @@
 		DA6CF5D01C75817D00734D68 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				DAD59DBA1C76F2B8007C7E02 /* UIImage */,
 				DA6CF5D11C75817D00734D68 /* Foundation+Log.m */,
 				DA6CF5D21C75817D00734D68 /* UIBarButtonItem+WJExtension.h */,
 				DA6CF5D31C75817D00734D68 /* UIBarButtonItem+WJExtension.m */,
@@ -226,6 +260,7 @@
 		DA982AC21C7304E2003C6D52 = {
 			isa = PBXGroup;
 			children = (
+				DAD59EE31C773A7E007C7E02 /* Reveal.framework */,
 				DA982ACD1C7304E2003C6D52 /* 百思不得姐 */,
 				DA982AE71C7304E2003C6D52 /* 百思不得姐Tests */,
 				DA982AF21C7304E2003C6D52 /* 百思不得姐UITests */,
@@ -505,6 +540,33 @@
 			name = right;
 			sourceTree = "<group>";
 		};
+		DAD59DBA1C76F2B8007C7E02 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				DAD59DBB1C76F2B8007C7E02 /* UIImage+Alpha.h */,
+				DAD59DBC1C76F2B8007C7E02 /* UIImage+Alpha.m */,
+				DAD59DBD1C76F2B8007C7E02 /* UIImage+Blur.h */,
+				DAD59DBE1C76F2B8007C7E02 /* UIImage+Blur.m */,
+				DAD59DBF1C76F2B8007C7E02 /* UIImage+CalculatedSize.h */,
+				DAD59DC01C76F2B8007C7E02 /* UIImage+CalculatedSize.m */,
+				DAD59DC11C76F2B8007C7E02 /* UIImage+Capture.h */,
+				DAD59DC21C76F2B8007C7E02 /* UIImage+Capture.m */,
+				DAD59DC31C76F2B8007C7E02 /* UIImage+Color.h */,
+				DAD59DC41C76F2B8007C7E02 /* UIImage+Color.m */,
+				DAD59DC51C76F2B8007C7E02 /* UIImage+FileName.h */,
+				DAD59DC61C76F2B8007C7E02 /* UIImage+FileName.m */,
+				DAD59DC71C76F2B8007C7E02 /* UIImage+FX.h */,
+				DAD59DC81C76F2B8007C7E02 /* UIImage+FX.m */,
+				DAD59DC91C76F2B8007C7E02 /* UIImage+Resize.h */,
+				DAD59DCA1C76F2B8007C7E02 /* UIImage+Resize.m */,
+				DAD59DCB1C76F2B8007C7E02 /* UIImage+RoundedCorner.h */,
+				DAD59DCC1C76F2B8007C7E02 /* UIImage+RoundedCorner.m */,
+				DAD59DCD1C76F2B8007C7E02 /* UIImage+Tint.h */,
+				DAD59DCE1C76F2B8007C7E02 /* UIImage+Tint.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -692,18 +754,27 @@
 			files = (
 				DA6CF5CF1C75816C00734D68 /* WJHttpTool.m in Sources */,
 				DAF199A01C761602009162B3 /* WJUserResult.m in Sources */,
+				DAD59DD71C76F2B8007C7E02 /* UIImage+RoundedCorner.m in Sources */,
 				DA982AD31C7304E2003C6D52 /* AppDelegate.m in Sources */,
 				DA6CF5D71C75817D00734D68 /* UIBarButtonItem+WJExtension.m in Sources */,
+				DAD59DD11C76F2B8007C7E02 /* UIImage+CalculatedSize.m in Sources */,
 				DA982B431C733876003C6D52 /* WJRecommendController.m in Sources */,
+				DAD59DD41C76F2B8007C7E02 /* UIImage+FileName.m in Sources */,
 				DA982AD01C7304E2003C6D52 /* main.m in Sources */,
+				DAD59DD61C76F2B8007C7E02 /* UIImage+Resize.m in Sources */,
 				DA982B3A1C730DFD003C6D52 /* WJNavgationController.m in Sources */,
 				DA6CF5D61C75817D00734D68 /* Foundation+Log.m in Sources */,
+				DAD59DD21C76F2B8007C7E02 /* UIImage+Capture.m in Sources */,
 				DA4E16701C74958400CE8471 /* WJCategoryData.m in Sources */,
+				DAD59DD01C76F2B8007C7E02 /* UIImage+Blur.m in Sources */,
 				DA982B1B1C7309A6003C6D52 /* WJFriendTrendsController.m in Sources */,
 				DA6CF5D81C75817D00734D68 /* UIView+WJExtension.m in Sources */,
 				DA982B211C730A0A003C6D52 /* WJNewController.m in Sources */,
+				DAD59DCF1C76F2B8007C7E02 /* UIImage+Alpha.m in Sources */,
+				DAD59DD51C76F2B8007C7E02 /* UIImage+FX.m in Sources */,
 				DA6CF5CE1C75816C00734D68 /* WJCategoryTool.m in Sources */,
 				DA4E165C1C745AB800CE8471 /* WJCategoryParam.m in Sources */,
+				DAD59DD81C76F2B8007C7E02 /* UIImage+Tint.m in Sources */,
 				DA4E16651C746D2800CE8471 /* WJRightTableViewCell.m in Sources */,
 				DA982B241C730A69003C6D52 /* WJTabBarController.m in Sources */,
 				DA982B1E1C7309EB003C6D52 /* WJMeController.m in Sources */,
@@ -713,6 +784,7 @@
 				DA982B181C73097C003C6D52 /* WJEssenceController.m in Sources */,
 				DA4E16761C74A34800CE8471 /* WJCategoryResult.m in Sources */,
 				DA982B3D1C730EF5003C6D52 /* WJTabBar.m in Sources */,
+				DAD59DD31C76F2B8007C7E02 /* UIImage+Color.m in Sources */,
 				DA982B4A1C734681003C6D52 /* WJFriendTrendsRightView.m in Sources */,
 				DA982B4F1C735306003C6D52 /* WJLeftTableViewCell.m in Sources */,
 			);
@@ -808,6 +880,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -845,6 +923,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -856,9 +940,35 @@
 			baseConfigurationReference = 4F3962BAC024308679A7ED0E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/百思不得姐/classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"SDWebImage\"",
+					"-l\"SVProgressHUD\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-objc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.heartHope.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -869,9 +979,35 @@
 			baseConfigurationReference = 90FBF1F81ED4B3C5F46B00A0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/百思不得姐/classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"SDWebImage\"",
+					"-l\"SVProgressHUD\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-objc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.heartHope.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -881,8 +1017,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "百思不得姐Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.heartHope.-----Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/百思不得姐.app/百思不得姐";
@@ -893,8 +1034,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "百思不得姐Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.heartHope.-----Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/百思不得姐.app/百思不得姐";
@@ -906,6 +1052,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "百思不得姐UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.heartHope.-----UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "百思不得姐";
@@ -918,6 +1065,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "百思不得姐UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.heartHope.-----UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "百思不得姐";

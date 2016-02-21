@@ -22,10 +22,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xm-sg-nGO">
-                        <rect key="frame" x="130" y="2" width="60" height="39.5"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="60" id="7X2-Ly-mWo"/>
-                        </constraints>
+                        <rect key="frame" x="5" y="2" width="314" height="39.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -33,11 +30,12 @@
                 <constraints>
                     <constraint firstItem="e10-2o-JQb" firstAttribute="leading" secondItem="jhm-jK-ZVi" secondAttribute="leading" id="9J2-nF-jwf"/>
                     <constraint firstItem="0Xm-sg-nGO" firstAttribute="top" secondItem="jhm-jK-ZVi" secondAttribute="top" constant="2" id="AmA-mM-N0z"/>
-                    <constraint firstItem="0Xm-sg-nGO" firstAttribute="centerX" secondItem="jhm-jK-ZVi" secondAttribute="centerX" id="Hph-pt-wQ5"/>
                     <constraint firstItem="0Xm-sg-nGO" firstAttribute="centerY" secondItem="jhm-jK-ZVi" secondAttribute="centerY" id="Q9A-nR-SAp"/>
                     <constraint firstAttribute="bottom" secondItem="0Xm-sg-nGO" secondAttribute="bottom" constant="2" id="S12-Yz-cY5"/>
+                    <constraint firstAttribute="trailing" secondItem="0Xm-sg-nGO" secondAttribute="trailing" constant="1" id="arB-aY-U3P"/>
                     <constraint firstAttribute="bottom" secondItem="e10-2o-JQb" secondAttribute="bottom" constant="2" id="bQ7-Jy-KOh"/>
                     <constraint firstItem="e10-2o-JQb" firstAttribute="top" secondItem="jhm-jK-ZVi" secondAttribute="top" constant="2" id="maY-lW-LZc"/>
+                    <constraint firstItem="0Xm-sg-nGO" firstAttribute="leading" secondItem="e10-2o-JQb" secondAttribute="trailing" constant="1" id="npS-cR-QhT"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

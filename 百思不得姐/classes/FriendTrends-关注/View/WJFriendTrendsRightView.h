@@ -12,7 +12,7 @@
 
 
 /** 右边的用户数据 */
-@property (strong ,nonatomic) NSArray *users;
+@property (strong ,nonatomic) NSMutableArray *users;
 
 /**
  *  显示数据的tableview

@@ -18,14 +18,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjH-9U-DJO" userLabel="leftView" customClass="WJFriendTrendsLeftView">
-                    <rect key="frame" x="0.0" y="64" width="70" height="536"/>
+                    <rect key="frame" x="0.0" y="64" width="75" height="536"/>
                     <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="70" id="uAa-Td-61Q"/>
+                        <constraint firstAttribute="width" constant="75" id="uAa-Td-61Q"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zN-Ki-5UJ" userLabel="rightView" customClass="WJFriendTrendsRightView">
-                    <rect key="frame" x="71" y="64" width="529" height="536"/>
+                    <rect key="frame" x="76" y="64" width="524" height="536"/>
                     <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
             </subviews>

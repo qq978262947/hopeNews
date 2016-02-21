@@ -18,7 +18,7 @@
     [WJHttpTool get:url params:params success:^(id responseObj) {
         if (success) {
             id result = [resultClass mj_objectWithKeyValues:responseObj];
-            WJLog(@"%@",result);
+//            WJLog(@"%@",result);
             success(result);
         }
     } failure:^(NSError *error) {
