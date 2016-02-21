@@ -36,7 +36,7 @@
  *  初始化tableview
  */
 - (void)setupTableView{
-    WJLog(@"%f:::%f",self.width,WJScreenH);
+    //设置背景色和frame
     self.backgroundColor = [UIColor yellowColor];
     CGFloat tableViewH = WJScreenH - 64;
     CGFloat tableViewW = self.width;
@@ -45,15 +45,18 @@
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(tableViewX, tableViewY, tableViewW, tableViewH)];
     [self addSubview:tableView];
     self.tableView = tableView;
+    //设置代理和数据源
     tableView.delegate = self;
     tableView.dataSource = self;
+    //取消竖直滚动条
     tableView.showsVerticalScrollIndicator = NO;
     //设置背景颜色
     UIView *bgView = [[UIView alloc]initWithFrame:tableView.bounds];
     bgView.backgroundColor = WJRGBColor(244, 244, 244);;
     [tableView setBackgroundView:bgView];
     
-    
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+
 }
 
 #pragma mark - <UITableViewDataSource>
