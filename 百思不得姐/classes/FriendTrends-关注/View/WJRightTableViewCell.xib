@@ -35,28 +35,39 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCg-9h-PoD">
-                        <rect key="frame" x="85" y="8" width="70" height="28"/>
+                        <rect key="frame" x="85" y="8" width="42" height="28"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="28" id="6Xc-e6-AGd"/>
-                            <constraint firstAttribute="width" constant="70" id="qv3-2m-rhp"/>
+                            <constraint firstAttribute="width" constant="140" id="qv3-2m-rhp"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qv3-2m-rhp"/>
+                            </mask>
+                        </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TT-Wl-3Qh">
-                        <rect key="frame" x="85" y="50" width="70" height="21"/>
+                        <rect key="frame" x="85" y="50" width="42" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="70" id="3c3-mI-oYE"/>
+                            <constraint firstAttribute="width" constant="140" id="3c3-mI-oYE"/>
                             <constraint firstAttribute="height" constant="21" id="Gq5-rV-gzc"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3c3-mI-oYE"/>
+                            </mask>
+                        </variation>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="MyY-jV-siY" firstAttribute="leading" secondItem="NPt-WT-zFy" secondAttribute="leading" constant="5" id="2sr-86-Qg3"/>
+                    <constraint firstAttribute="trailing" secondItem="9TT-Wl-3Qh" secondAttribute="trailing" constant="20" id="51N-v8-EiW"/>
                     <constraint firstItem="RCg-9h-PoD" firstAttribute="top" secondItem="NPt-WT-zFy" secondAttribute="top" constant="8" id="5wk-GN-Qef"/>
                     <constraint firstItem="9TT-Wl-3Qh" firstAttribute="leading" secondItem="MyY-jV-siY" secondAttribute="trailing" constant="10" id="9Pp-Yh-bX8"/>
                     <constraint firstItem="RCg-9h-PoD" firstAttribute="leading" secondItem="MyY-jV-siY" secondAttribute="trailing" constant="10" id="H4D-Kl-cTS"/>
@@ -65,7 +76,14 @@
                     <constraint firstAttribute="trailingMargin" secondItem="neb-cW-3sw" secondAttribute="trailing" constant="10" id="OKr-HC-GLx"/>
                     <constraint firstItem="neb-cW-3sw" firstAttribute="centerY" secondItem="NPt-WT-zFy" secondAttribute="centerY" id="Sjw-6t-8L6"/>
                     <constraint firstItem="MyY-jV-siY" firstAttribute="top" secondItem="NPt-WT-zFy" secondAttribute="top" constant="2" id="WjY-pz-Xsp"/>
+                    <constraint firstItem="neb-cW-3sw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RCg-9h-PoD" secondAttribute="trailing" constant="10" id="Wwv-vP-gh7"/>
+                    <constraint firstItem="9TT-Wl-3Qh" firstAttribute="trailing" secondItem="RCg-9h-PoD" secondAttribute="trailing" id="nXo-w0-MVD"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="51N-v8-EiW"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="fancs" destination="9TT-Wl-3Qh" id="Iua-d1-qGu"/>

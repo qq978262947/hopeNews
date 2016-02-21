@@ -26,4 +26,7 @@
 #define WJScreenW [UIScreen mainScreen].bounds.size.width
 #define WJScreenH [UIScreen mainScreen].bounds.size.height
 
+#import <Masonry.h>
+
+
 #endif

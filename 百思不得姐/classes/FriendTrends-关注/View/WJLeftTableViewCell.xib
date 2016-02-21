@@ -26,16 +26,26 @@
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WM6-Ja-oX0">
+                        <rect key="frame" x="1" y="40.5" width="319" height="2"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="2Wh-yg-eGs"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="e10-2o-JQb" firstAttribute="leading" secondItem="jhm-jK-ZVi" secondAttribute="leading" id="9J2-nF-jwf"/>
                     <constraint firstItem="0Xm-sg-nGO" firstAttribute="top" secondItem="jhm-jK-ZVi" secondAttribute="top" constant="2" id="AmA-mM-N0z"/>
                     <constraint firstItem="0Xm-sg-nGO" firstAttribute="centerY" secondItem="jhm-jK-ZVi" secondAttribute="centerY" id="Q9A-nR-SAp"/>
+                    <constraint firstItem="WM6-Ja-oX0" firstAttribute="leading" secondItem="jhm-jK-ZVi" secondAttribute="leading" constant="1" id="QMN-nQ-zmb"/>
                     <constraint firstAttribute="bottom" secondItem="0Xm-sg-nGO" secondAttribute="bottom" constant="2" id="S12-Yz-cY5"/>
+                    <constraint firstAttribute="bottom" secondItem="WM6-Ja-oX0" secondAttribute="bottom" constant="1" id="Xem-oH-fgn"/>
                     <constraint firstAttribute="trailing" secondItem="0Xm-sg-nGO" secondAttribute="trailing" constant="1" id="arB-aY-U3P"/>
                     <constraint firstAttribute="bottom" secondItem="e10-2o-JQb" secondAttribute="bottom" constant="2" id="bQ7-Jy-KOh"/>
                     <constraint firstItem="e10-2o-JQb" firstAttribute="top" secondItem="jhm-jK-ZVi" secondAttribute="top" constant="2" id="maY-lW-LZc"/>
                     <constraint firstItem="0Xm-sg-nGO" firstAttribute="leading" secondItem="e10-2o-JQb" secondAttribute="trailing" constant="1" id="npS-cR-QhT"/>
+                    <constraint firstAttribute="trailing" secondItem="WM6-Ja-oX0" secondAttribute="trailing" id="sJU-Qh-01E"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

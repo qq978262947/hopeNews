@@ -59,6 +59,8 @@
     self.navigationItem.title = @"推荐关注";
     self.view.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
     self.leftView.delegate = self;
+    self.leftView.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.rightView.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 //    self.rightView.delegate = self;
 }
 

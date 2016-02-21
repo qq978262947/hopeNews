@@ -36,11 +36,7 @@
 - (void)setupTableView{
     //设置tableview
     self.backgroundColor = WJGlobalBg;
-    CGFloat tableViewH = WJScreenH - 64;
-    CGFloat tableViewW = WJScreenW-71;
-    CGFloat tableViewX = 0;
-    CGFloat tableViewY = 0;
-    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(tableViewX, tableViewY, tableViewW, tableViewH)];
+    UITableView *tableView = [[UITableView alloc]init];
     [self addSubview:tableView];
     self.tableView = tableView;
     tableView.delegate = self;
@@ -52,6 +48,22 @@
 
 
 }
+
+
+//布局当前视图
+- (void)layoutTableView{
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.top.equalTo(self);
+        make.center.equalTo(self);
+    }];
+}
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
+    [self layoutTableView];
+}
+
+
 
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
