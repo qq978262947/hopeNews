@@ -15,7 +15,7 @@
 {
     NSDictionary *params = [param mj_keyValues];
     //    WJLog(@"%@",params);
-    [WJHttpTool get:url params:params success:^(id responseObj) {
+    [[WJHttpTool sharedHttpTool] get:url params:params success:^(id responseObj) {
         if (success) {
             id result = [resultClass mj_objectWithKeyValues:responseObj];
 //            WJLog(@"%@",result);
@@ -27,4 +27,10 @@
         }
     }];
 }
+
++ (void)cancelAllOperation{
+    [[WJHttpTool sharedHttpTool]cancelAllOperation];
+}
+
+
 @end

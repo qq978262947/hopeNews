@@ -97,7 +97,7 @@
         self.leftView.categories = result.list;
         // 默认选中首行
         [self.leftView.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
-        [self loadNewUserData];
+        [self.rightView.tableView.mj_header beginRefreshing];
         
     } failure:^(NSError *error) {
         // 显示失败信息
@@ -210,6 +210,10 @@
         [self.rightView.tableView.mj_header beginRefreshing];
     }
 
+}
+
+- (void)dealloc{
+    [WJCategoryTool cancelAllOperation];
 }
 
 @end

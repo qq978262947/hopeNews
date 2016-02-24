@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "singleton.h"
 
 @interface WJHttpTool : NSObject
+
+singleton_h(HttpTool)
+
+
 /**
  *  发送一个GET请求
  *
@@ -17,7 +22,7 @@
  *  @param success 请求成功后的回调（请将请求成功后想做的事情写到这个block中）
  *  @param failure 请求失败后的回调（请将请求失败后想做的事情写到这个block中）
  */
-+ (void)get:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *error))failure;
+- (void)get:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *error))failure;
 /**
  *  发送一个POST请求
  *
@@ -26,6 +31,13 @@
  *  @param success 请求成功后的回调（请将请求成功后想做的事情写到这个block中）
  *  @param failure 请求失败后的回调（请将请求失败后想做的事情写到这个block中）
  */
-+ (void)post:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseObj))success failure:(void (^)(NSError *error))failure;
+- (void)post:(NSString *)url params:(NSDictionary *)params success:(void (^)(id responseObj))success failure:(void (^)(NSError *error))failure;
+
+
+
+/**
+ *  取消所有任务
+ */
+- (void)cancelAllOperation;
 
 @end

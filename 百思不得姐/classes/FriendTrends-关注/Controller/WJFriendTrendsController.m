@@ -8,6 +8,7 @@
 
 #import "WJFriendTrendsController.h"
 #import "WJRecommendController.h"
+#import "WJLoginRegisterController.h"
 
 @interface WJFriendTrendsController ()
 
@@ -30,10 +31,20 @@
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"cellFollowClickIcon" highImage:@"cellFollowDisableIcon" target:self action:@selector(friendsClick)];
 }
 
+// 点击recommend按钮
 - (void)friendsClick
 {
     WJRecommendController *vc = [[WJRecommendController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+/**
+ *  点击登录/注册按钮
+ *
+ *  @param sender button
+ */
+- (IBAction)loginRegisterBtn:(id)sender {
+    WJLoginRegisterController *loginRegisterController = [[WJLoginRegisterController alloc]init];
+    [self.navigationController presentViewController:loginRegisterController animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

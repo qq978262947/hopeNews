@@ -10,4 +10,11 @@
 
 @interface WJBaseTool : NSObject
 + (void)getWithUrl:(NSString *)url param:(id)param resultClass:(Class)resultClass success:(void (^)(id))success failure:(void (^)(NSError *))failure;
+
+/**
+ *  取消所有任务
+ */
++ (void)cancelAllOperation;
+
+
 @end

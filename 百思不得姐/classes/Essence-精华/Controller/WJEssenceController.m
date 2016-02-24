@@ -7,9 +7,10 @@
 //
 
 #import "WJEssenceController.h"
+#import "WJContainerView.h"
 
-@interface WJEssenceController ()
-
+@interface WJEssenceController () <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) WJContainerView *containerView;
 @end
 
 @implementation WJEssenceController
@@ -17,23 +18,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = WJGlobalBg;
+    [self setupContainerView];
     
 }
+
+- (void)setupContainerView{
+    WJContainerView *containerView = [WJContainerView containerView];
+    self.containerView = containerView;
+    containerView.titles = @[@"段子",@"图片",@"视频",@"声音",@"全部"];
+    [self.view addSubview:containerView];
+    [self configContainerView];
+    [containerView setBackgroundColor:[UIColor whiteColor]];
+    containerView.buttonBackgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+    containerView.indicatorViewColor = [UIColor redColor];
+    
+}
+
+- (void)configContainerView{
+    [self.containerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(@64);
+        make.left.right.equalTo(self.view);
+        make.height.equalTo(@35);
+    }];
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0;
 }
-*/
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
+}
 
 @end

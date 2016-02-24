@@ -9,15 +9,29 @@
 #import "WJHttpTool.h"
 #import <AFNetworking.h>
 
+@interface WJHttpTool ()
+@property (strong, nonatomic) AFHTTPSessionManager *manager;
+@end
+
 @implementation WJHttpTool
 
+singleton_m(HttpTool)
 
-+ (void)get:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure
+- (AFHTTPSessionManager *)manager{
+    if (nil == _manager) {
+        //1.获得请求管理者
+        _manager = [[AFHTTPSessionManager alloc]init];
+    }
+    return _manager;
+}
+
+
+
+- (void)get:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure
 {
-    //1.获得请求管理者
-    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]init];
+
     //2.发送get请求
-    [manager GET:url parameters:params progress:nil  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manager GET:url parameters:params progress:nil  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {
             success(responseObject);
         }
@@ -28,12 +42,10 @@
     }];
 }
 
-+ (void)post:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure
+- (void)post:(NSString *)url params:(NSDictionary *)params success:(void (^)(id))success failure:(void (^)(NSError *))failure
 {
-    //1.获得请求管理者
-    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]init];
     //2.发送post请求
-    [manager POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manager POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {
             success(responseObject);
         }
@@ -42,6 +54,11 @@
             failure(error);
         }
     }];
+}
+
+
+- (void)cancelAllOperation{
+    [self.manager.operationQueue cancelAllOperations];
 }
 
 @end

@@ -16,9 +16,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neb-cW-3sw">
-                        <rect key="frame" x="212" y="27" width="70" height="20"/>
+                        <rect key="frame" x="238" y="27" width="44" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="70" id="4yR-bv-9x9"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="4yR-bv-9x9"/>
                             <constraint firstAttribute="height" constant="20" id="eBf-jU-CQK"/>
                         </constraints>
                         <state key="normal" title="+ 关注">
@@ -76,7 +76,7 @@
                     <constraint firstAttribute="trailingMargin" secondItem="neb-cW-3sw" secondAttribute="trailing" constant="10" id="OKr-HC-GLx"/>
                     <constraint firstItem="neb-cW-3sw" firstAttribute="centerY" secondItem="NPt-WT-zFy" secondAttribute="centerY" id="Sjw-6t-8L6"/>
                     <constraint firstItem="MyY-jV-siY" firstAttribute="top" secondItem="NPt-WT-zFy" secondAttribute="top" constant="2" id="WjY-pz-Xsp"/>
-                    <constraint firstItem="neb-cW-3sw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RCg-9h-PoD" secondAttribute="trailing" constant="10" id="Wwv-vP-gh7"/>
+                    <constraint firstItem="neb-cW-3sw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RCg-9h-PoD" secondAttribute="trailing" constant="5" id="Wwv-vP-gh7"/>
                     <constraint firstItem="9TT-Wl-3Qh" firstAttribute="trailing" secondItem="RCg-9h-PoD" secondAttribute="trailing" id="nXo-w0-MVD"/>
                 </constraints>
                 <variation key="default">
